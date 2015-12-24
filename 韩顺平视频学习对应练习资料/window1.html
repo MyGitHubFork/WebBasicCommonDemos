@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>window1.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script  language="javascript" type="text/javascript">
+	//setInterval()按照指定的周期来循环调用函数或者表达式。是一个window对
+	//让静态图片跑起来,同时跑累了歇一会儿
+	//setInterval可以返回一个给cleanInterval设置的值。相当于timeout的一个编号
+	var n=1;
+	function runChild()
+	{
+		if(n>30)
+		{
+		    //停止第一个定时器
+		    clearInterval(myTimer);
+		    //五秒以后启动第二个定时器
+		    setTimeout("reRun()",5000);
+			n=1;
+		}
+		//得到mying对象
+		var myimg=document.getElementById("myimg");
+		myimg.src="images/"+((n++)%2)+".jpg";
+	}
+	//第一个定时器
+	var myTimer = setInterval("runChild()",100);
+	function reRun()
+	{
+		myTimer = setInterval("runChild()",100); //第二个定时器
+	}	
+	</script>
+  </head> 
+  <body>
+  <img src="images/0.jpg" id="myimg"/>  
+  </body>
+</html>

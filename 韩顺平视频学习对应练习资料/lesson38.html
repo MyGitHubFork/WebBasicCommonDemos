@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>lesson38.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+  <script type="text/javascript">
+   /*
+   //Math静态类
+    document.writeln(Math.abs(-12));
+    document.write("<br/>");
+    //动态类Date
+    var nowdate = new Date();
+    document.writeln(nowdate.toLocaleString());
+    document.write("<br/>");
+    document.writeln(Math.ceil(4.5));
+    document.write("<br/>");
+    document.writeln(Math.floor(4.5));
+    document.write("<br/>");
+    //四舍五入。。。。
+    document.writeln(Math.round(4.77));
+    */
+    //Data的常用用法
+    /*
+    var date =new Date();
+    document.write(date.toLocaleString()+"     ");
+    document.write(+"     "+date.getYear()+"  "+date.getMonth());
+    */
+    //string类用法
+    /*
+    var str="abcd1234";
+    document.write(str);
+    document.write("<br/>");
+    
+    var str2="abc def opp";
+    var arr = str2.split(" ");//如果使用("")，就是一个一个分割。
+    document.write(arr);
+    document.write("<br/>");
+    
+    var str3="abcdef";
+    document.write(str3.substr(1,3));//bcd，从一取到三。
+    document.write("<br/>");
+    document.write(str3.substring(1,3));//bc,取到3-1位。
+    document.write("<br/>");
+    
+    var str4="abcd";
+    document.write(str4.charAt(3));//取出第三位的数d。
+    document.write("<br/>");
+    
+    var str5 = "ab df 34 fd dfab";
+    document.write("<br/>");
+    document.write(str5.indexOf("ab"));//找到ab第一次在str5中出现的位置。
+    document.write("<br/>");
+    document.write(str5.indexOf("ab",1));//找到ab第二次在str5中出现的位置。 
+    document.write("<br/>");
+    */
+    
+    /*
+    //Array类是动态类。
+    var myarr = new Array();
+    myarr[0]="sp";
+    myarr[1]=90;
+    document.write(myarr.length+"  :"+myarr);
+    document.write("<br/>");
+    myarr[1]=null;  //把第二个元素设置为null。
+    document.write(myarr.length+"  :"+myarr);
+    document.write("<br/>");
+    myarr.pop(); //出栈，弹出最后一个。
+    document.write(myarr.length+"  :"+myarr);
+    document.write("<br/>");
+    myarr.push("abcd");//入栈，添加一个元素。
+    document.write(myarr.length+"  :"+myarr);
+    document.write("<br/>");
+    myarr[10]="huang";//不要跳过下标放置。
+    document.write(myarr.length+"  :"+myarr);
+    document.write("<br/>");
+    */
+    /*
+    var boo = new Boolean(true);
+    document.write(boo.toString());//把boolean类型转换为string类型。现在true就是一个字符串
+    document.write("<br/>");
+    document.write(boo.valueOf());//返回boolean类型的原始值。
+    */
+    
+    //Number类用法。
+    var a=90;
+    a=a.toString(); //此时a就是一个字符串。如果没有参数模式是转换为十进制。
+    document.write(a);
+    document.write("<br/>");
+    a=980.3242323
+    a=a.toFixed(2);//保留两位小数点。。。
+    document.write(a);
+    document.write("<br/>");
+    
+    var b =10;
+    //把10的二进制转换出来。
+    document.write(b.toString(2));//把b以二进制形式显示出来。
+    document.write("<br/>");
+    document.write(b.toString(8));//把b以八进制形式显示出来。
+    document.write("<br/>");
+    
+    document.write(Number.MAX_VALUE);//当前浏览器支持的最大整数。
+    
+   </script>
+  </body>
+</html>

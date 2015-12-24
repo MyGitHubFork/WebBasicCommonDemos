@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>array1.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <script language="javascript" type="text/javascript">
+    var weigths = [1,2,42,2,,53,2,34,53,5];
+    var all_weight =0;
+    var avg_weight =0;
+    /*
+    for(var i=0; i<weights.length;i++)
+    {
+     	//document.writeln(weights[i]+" ");
+     	all_weight + = weights[i];   	
+    }
+    avg_weight = all_weight/weights.length;
+    
+    document.writeln("总体重是 "+ all_weight + "平均体重是" + avg_weight.toFixed(2));
+    */
+    /*
+    arr=[45,90,0];
+    arr['gg'] = 9000;
+    for(var key in arr)
+	{
+	    window.alert(key +" = " + arr[key])
+	}
+	*/
+	/*
+	var arr =[["shoping",123,4.5],["a","b","c"],[23,5]]
+	for(var i=0;i<arr.length;i++)
+	{
+	     for(var j=0;j<arr[i].length;j++)
+	     		document.writeln(arr[i][j]+"&nbsp;");
+	     document.writeln("<br/>")
+	}
+	*/
+	
+	/*
+	//冒泡排序算法	
+	var arr = [5,0,-56,54,234,54,-53,53,-4,53]
+	var flag =false;
+	for(var i=0;i<arr.length-1;i++)
+		{
+			for(var j=0;j<arr.length-1-i;j++)
+			    if(arr[j]>arr[j+1])
+			 	{
+			 		var temp =arr[j];
+			 		arr[j] = arr[j+1];
+			 		arr[j+1] = temp;
+			 		flag =true;
+			 	}
+			 if(flag)
+			 {
+			     flag=false;
+			 }
+			 else
+			 {
+			     break;
+			 }
+		}
+		
+	for(var i=0;i<arr.length;i++)
+	{
+		document.writeln(arr[i]+"&nbsp;");
+	}
+	*/
+	
+	//二分查找
+	//找到数组的中间数，和你要查找的数比较，如果midval>findVal,则findVal在数组的左边，则只在左边查找，反之右边。
+	var arr = [-13,-5,-2,0,4,6,87,98,123,124,654]
+	function binarysearch(arr,findVal,leftIndex,rightIndex)
+	{
+		 //找到中间那个值 地板除
+		 var midIndex = Math.floor((leftIndex + rightIndex)/2);
+		 var midVal = arr[midIndex];
+		 //防止无穷递归。
+		 if(leftIndex>rightIndex)
+		 {
+		 	 document.writeln("找不到"+"<br/>");
+		 	 return;
+		 }
+		 if(midVal >findVal)
+	     {
+			 binarysearch(arr,findVal,leftIndex,midIndex-1);
+	     }
+		 else 
+		 {
+		     if(midVal < findVal)
+			 {
+			      binarysearch(arr,findVal,midIndex+1,rightIndex);
+			 }else
+			 {
+			 	  document.writeln("找到了，下标"+midIndex+"<br/>");
+			 	  return;
+			 }
+		  }
+	}
+	binarysearch(arr,2,0,arr.length-1);
+	binarysearch(arr,0,0,arr.length-1);
+	binarysearch(arr,87,0,arr.length-1);
+	//测试。
+    </script>
+  </body>
+</html>

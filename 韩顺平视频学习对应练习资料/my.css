@@ -1,0 +1,15 @@
+.style1{
+width:300px;
+height:200px;
+border:1px solid red;
+margin: 150px 0px 0px 200px
+}
+.style1 table{
+width:298px;
+height:180px;
+border: 1px solid black;
+}
+.style1 table td{
+border:1px solid black;
+text-align:center;
+}

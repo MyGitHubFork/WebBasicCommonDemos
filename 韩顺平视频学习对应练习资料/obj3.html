@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>obj3.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <script type="text/javascript">
+    /*
+    var p1 = new Object();
+    p1.name = "sp";
+    document.writeln(p1.constructor);
+    
+    
+    var i = new Number(10); //等价于 var i=10;
+    Number.prototype.add = function(a){  //给类添加方法。
+    document.writeln("this+a"+(this+a));
+    return this+a;
+    }
+    var j = new Number(10);
+    document.writeln(j.add(10).add(30));
+    */
+    
+    
+    /*
+    下面给js的Array对象拓展一个find(val)方法，当一个Array对象调用该方法的时候，
+    如果能找到val则返回其下标，否则返回-1。
+    */
+    var arr1 = new Array(3);
+    arr1[0]="renlei";
+    arr1[1]="ziyuanbu";
+    arr1[2]="caonima";
+    
+    //给所有Array对象添加一个方法find(val)
+    Array.prototype.find=function(val)
+    {
+    		//开始遍历数组
+    		for(var i =0;i<this.length;i++)
+    		{
+    			if(val==this[i])
+    				return i;
+    		}
+    		return -1;
+    }
+    
+    document.write(arr1.find("ziyuanbu")+"<br/>");
+    //遍历
+    for(var i=0;i<arr1.length;i++)
+    {
+    	document.writeln(arr1[i]+"&nbsp;");
+    }
+    //颠倒
+    document.write("<br/>");
+    arr1.reverse();
+    for(var i=0;i<arr1.length;i++)
+    {
+    	document.writeln(arr1[i]+"&nbsp;");
+    }
+    </script>
+  </body>
+</html>

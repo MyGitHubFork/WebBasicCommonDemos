@@ -1,0 +1,46 @@
+.s1{
+font-size: 50px;
+color:blue;
+}
+.s2{
+background-color: gray;
+font-style: italic;
+color:red;
+font-weight: bold;
+}
+.s3{
+background-color: gray;
+font-weight: bold;
+}
+.s4{
+background-color: gray;
+font-style: italic;
+font-weight: bold;
+text-decoration: underline;
+}
+/*优先使用类选择器，以防止后面有其他要求可以通过id选择器来实现*/
+
+/*使用html元素选择器来编辑超链接*/
+/*超链接默认的样式*/
+a:link{
+color:red;
+font-size: 24px;
+font-family:华文新魏;
+text-decoration: none;
+}
+
+/*当鼠标移动到超链接的时候，自动出现下划线*/
+a:hover{
+	color:green;
+font-size: 40px;
+font-family:"宋体";
+text-decoration: underline;	
+}
+
+/*当鼠标点击超链接以后*/
+a:visited{
+color:gray;
+}
+
+
+
