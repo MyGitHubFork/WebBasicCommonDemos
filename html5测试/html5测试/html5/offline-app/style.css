@@ -1,0 +1,27 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #222;
+}
+
+h1 {
+  color: white;
+}
+
+#installer {
+  margin: 20px;
+  top: 20px;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+  background-color: orange;
+}
+
+#updater {
+  margin: 20px;
+  top: 20px;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+  background-color: #FCE;
+}

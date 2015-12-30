@@ -1,0 +1,55 @@
+#no {
+  display: none;  
+}
+
+@media screen {
+  html, body, div, span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }     
+  body {
+    height: auto;
+    -webkit-text-size-adjust:none;
+    font-family:Helvetica, Arial, Verdana, sans-serif;
+    padding:0px;
+    overflow-x: hidden;   
+  }   
+  
+  .outer {
+    background: rgba(123, 256, 245, 0.9);
+    padding: 0px;
+    min-height: 48px;
+    
+  }
+  
+  .box {
+    position: relative;
+    float: left;
+    width: 45%;
+    padding: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(178,215,255,0.75);
+    min-height: 160px;
+  } 
+  
+  .box2 {
+    position: relative;
+    float: left;
+    width: 45%;
+    padding: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(178,215,255,0.75);
+  } 
+  
+  .box span {
+    display: block;
+  }
+  span.head {
+    font-weight: bold;        
+  }
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html manifest="main.manifest">
+  <head> 
+    <title>Accel & Gyro</title> 
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <meta name="apple-touch-fullscreen" content="yes" /> 
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="apple-touch-icon" href="gyroscope.png" /> 
+  </head> 
+ 
+  <body> 
+    <div id="yes"> 
+        <div class="box" id="accel"> 
+          <span class="head">Accelerometer</span> 
+          <span id="xlabel"></span> 
+          <span id="ylabel"></span> 
+          <span id="zlabel"></span> 
+          <span id="ilabel"></span>         
+          <span id="arAlphaLabel"></span>                   
+          <span id="arBetaLabel"></span>                    
+          <span id="arGammaLabel"></span>                                       
+        </div>    
+      
+        <div class="box" id="gyro"> 
+          <span class="head">Gyroscope</span> 
+          <span id="alphalabel"></span>     
+          <span id="betalabel"></span> 
+          <span id="gammalabel"></span> 
+        </div> 
+        
+        <div class="box2" id="accelcolor"> 
+          <span class="head">Color</span> 
+        </div> 
+        <div class="box2" id="gyrocolor"> 
+          <span class="head">Color</span> 
+        </div> 
+        
+    </div> 
+    <div id="no"> 
+      Your browser does not support Device Orientation and Motion API. Try this sample with iPhone, iPod or iPad with iOS 4.2+.    
+    </div> 
+    
+    <script src="app.js"></script> 
+  </body> 
+</html> 

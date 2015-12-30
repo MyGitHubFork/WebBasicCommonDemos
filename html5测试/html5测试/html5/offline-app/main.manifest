@@ -1,0 +1,27 @@
+CACHE MANIFEST
+# 2011-04-03 v0
+
+CACHE:
+index.html
+
+# Stylsheets
+style.css
+
+# JavaScripts
+require-kiss.js
+events.js
+future.js
+periodic.js
+app-cache.js
+main.js
+
+#NETWORK:
+#*
+
+FALLBACK:
+online.json offline.json
+
+#/ind /index.html
+#*.jpeg /offline.jpeg
+#*.js /offline.js
+#*.html /offline.html

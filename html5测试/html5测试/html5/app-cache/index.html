@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html manifest="./main.manifest">
+  <head>
+    <title>Application Cache Demo</title>
+    <script src="./application.js"></script>
+  </head>
+  <body>
+    <h1>Application Cache Demo</h1>
+    <form>
+      <input name="update" type="button" value="Update Application Cache" />
+    </form>
+    <div>
+      <span id="event-phase">&nbsp;</span> of <span id="event-phase-total">&nbsp;</span>
+    </div>
+    Progress: <progress id="app-cache-progress">updating...</progress>
+    <div id="bad-news">&nbsp;</div>
+    <script>console.log('domBodyLoaded', new Date().toISOString())</script>
+  </body>
+</html>

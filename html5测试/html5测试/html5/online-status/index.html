@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Am I Online?</title>
+    <script src="require-kiss.js"></script>
+    <script src="amionline-favinet-list.js"></script>
+    <script src="amionline-favinet.js"></script>
+    <script>
+      function logit(err, status) {
+        console.log('favinet', err, status);
+      }
+      require('amionline-favinet').create(logit);
+    </script>
+    <script src="amionline-origin.js"></script>
+    <script>
+      function logit(err, status) {
+        console.log('origin', err, status);
+      }
+      require('amionline-origin').create(logit);
+    </script>
+    <script src="periodic.js"></script>
+    <script src="events.js"></script>
+    <script src="amionline.js"></script>
+    <script src="amionline-test.js"></script>
+  </head>
+  <body>
+    Online: <span id="online-status">unknown</span>
+    <br/>
+    Browser Status: <span id="browser-status">unknown</span>
+    <br/>
+    Origin Status: <span id="origin-status">unknown</span>
+    <br/>
+    Internet Status: <span id="internet-status">unknown</span>
+  </body>
+</html>

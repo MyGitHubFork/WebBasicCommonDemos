@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# v0.0.14
+presentation.css
+behavior.js
+javascripts/jquery.min.js
+db/flashcards.js
+javascripts/flashcards.js
+db/pizza.png
+db/soda.png
+db/ice-cream.png

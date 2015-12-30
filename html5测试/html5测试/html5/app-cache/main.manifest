@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# v7
+
+CACHE:
+index.html
+application.js
+
+NETWORK:
+*

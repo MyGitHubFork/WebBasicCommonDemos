@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html manifest="./main.manifest">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <meta name="apple-touch-fullscreen" content="yes" /> 
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+
+    <title>Application Cache Demo</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <!-- link rel="apple-touch-icon" href="gyroscope.png" /--> 
+
+    <script src="./require-kiss.js"></script>
+    <script src="./events.js"></script>
+    <script src="./future.js"></script>
+    <script src="./app-cache.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <h1>Offline Application Demo</h1>
+
+    <div id="installer" style="display: none">
+      <h2>Installing...</h2>
+      <div id="inst-start">No Welcome</div>
+      <div id="inst-error">No Error</div>
+      <div id="inst-loadstart">Nothing to download</div>
+      <progress id="inst-progress">
+        Downloaded <span id="inst-phase">0</span><span id="inst-phase-total">&nbsp;</span>
+      </progress>
+      <div id="inst-loadend">Nothing downloaded</div>
+      <div id="inst-end">Did not finish check</div>
+      <input name="inst-dismiss" type="button" value="OK" />
+    </div>
+      
+    <div id="updater" style="display: none">
+      <h2>Updating...</h2>
+      <div id="up-start">No Welcome</div>
+      <div id="up-error">No News</div>
+      <div id="up-loadstart">No Load Start</div>
+      <progress id="up-progress">
+        Downloaded <span id="up-phase">0</span><span id="up-phase-total">&nbsp;</span>
+      </progress>
+      <div id="up-loadend">No Load End</div>
+      <div id="up-end">No End</div>
+      <input id="up-reload" type="button" name="up-reload" value="Upgrade Now" />
+      <input name="up-dismiss" type="button" value="Dismiss" />
+    </div>
+
+    <form>
+      <input name="update-check" type="button" name="update-check" value="Check for Updates" />
+    </form>
+
+  </body>
+</html>
