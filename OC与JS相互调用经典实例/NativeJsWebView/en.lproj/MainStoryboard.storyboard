@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Njw View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="njwViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2oP-SR-NUT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kuc-A2-yZl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4j-eV-Pax">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="az7-Pc-sgD"/>
+                                </constraints>
+                            </webView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRk-lO-ZWW">
+                                <rect key="frame" x="103" y="178" width="174" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="irB-l6-1dV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qVY-yt-FUT">
+                                <rect key="frame" x="103" y="216" width="174" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3K-ia-jqD">
+                                <rect key="frame" x="128" y="254" width="125" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Update WebView">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapUpdateWebView:" destination="2" eventType="touchUpInside" id="LAh-n6-khg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="First Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlB-KZ-ytD">
+                                <rect key="frame" x="8" y="178" width="87.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Last Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUq-ls-apq">
+                                <rect key="frame" x="9" y="216" width="86.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qVY-yt-FUT" firstAttribute="top" secondItem="TRk-lO-ZWW" secondAttribute="bottom" constant="8" symbolic="YES" id="2wo-kT-xkB"/>
+                            <constraint firstItem="qVY-yt-FUT" firstAttribute="leading" secondItem="jUq-ls-apq" secondAttribute="trailing" constant="8" symbolic="YES" id="55A-dm-EAN"/>
+                            <constraint firstItem="jUq-ls-apq" firstAttribute="top" secondItem="qVY-yt-FUT" secondAttribute="top" id="Fiy-SI-Bf3"/>
+                            <constraint firstItem="u4j-eV-Pax" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="Hkc-fa-cRY"/>
+                            <constraint firstItem="u4j-eV-Pax" firstAttribute="top" secondItem="3" secondAttribute="top" id="OvX-PO-tbV"/>
+                            <constraint firstItem="y3K-ia-jqD" firstAttribute="top" secondItem="qVY-yt-FUT" secondAttribute="bottom" constant="8" symbolic="YES" id="QgO-y8-8yX"/>
+                            <constraint firstItem="TRk-lO-ZWW" firstAttribute="leading" secondItem="FlB-KZ-ytD" secondAttribute="trailing" constant="8" symbolic="YES" id="UdC-JO-Hkd"/>
+                            <constraint firstItem="FlB-KZ-ytD" firstAttribute="top" secondItem="u4j-eV-Pax" secondAttribute="bottom" constant="8" symbolic="YES" id="aYK-mJ-PQt"/>
+                            <constraint firstItem="TRk-lO-ZWW" firstAttribute="trailing" secondItem="qVY-yt-FUT" secondAttribute="trailing" id="d5J-Se-59e"/>
+                            <constraint firstItem="u4j-eV-Pax" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="ekq-mo-UvE"/>
+                            <constraint firstItem="y3K-ia-jqD" firstAttribute="centerX" secondItem="qVY-yt-FUT" secondAttribute="centerX" id="jiq-94-tvK"/>
+                            <constraint firstItem="FlB-KZ-ytD" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="8" id="pGp-XY-w4c"/>
+                            <constraint firstItem="TRk-lO-ZWW" firstAttribute="top" secondItem="u4j-eV-Pax" secondAttribute="bottom" constant="8" symbolic="YES" id="sC9-VS-5VM"/>
+                            <constraint firstItem="qVY-yt-FUT" firstAttribute="leading" secondItem="TRk-lO-ZWW" secondAttribute="leading" id="zmk-co-kBa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fNameTextField" destination="TRk-lO-ZWW" id="Vta-OW-xyO"/>
+                        <outlet property="lNameTextField" destination="qVY-yt-FUT" id="UNm-cf-wEb"/>
+                        <outlet property="webView" destination="u4j-eV-Pax" id="04h-zd-e0R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
