@@ -15,4 +15,6 @@
 
 第六章 html5一些特性和标准的介绍，如何编写符合标准的html文档。html5标准核实网址：https://validator.w3.org
 
-第七章 css基础用法介绍
+第七章 css基础用法介绍  css文件校验网址：http://jigsaw.w3.org/css-validator/
+
+第八章：css的字体、字体颜色、背景颜色、字体宽度等各种css属性的值可以来这里找。

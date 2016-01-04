@@ -1,0 +1,37 @@
+/*
+引入一个字体
+*/
+@font-face{
+	font-family: "Emblema One";
+	src:url(EmblemaOne-Regular.woff),
+	    url(EmblemaOne-Regular.ttf);
+}
+
+
+body{
+	font-family: Verdana,"Emblema One", Geneva, Arial, sans_serif;
+	font-size: small;
+}
+h1,h2{
+	color: #cc6600;
+	/*下划线
+	text-decoration: underline;
+	*/
+	border-bottom: thin dotted #888888;
+}
+/*
+下面这两个字体比例是body字体大小的1.5倍和1.2倍。
+*/
+h1{
+	font-family: "Emblema One",sans_serif;
+	font-size: 220%;
+	border-bottom: none;
+}
+h2{
+	font-size: 1.2em;
+	/*删除从父类节点继承的属性*/
+	font-weight: normal;
+}
+blockquote{
+	font-style: italic;
+}
