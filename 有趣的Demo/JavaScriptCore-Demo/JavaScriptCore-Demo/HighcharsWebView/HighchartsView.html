@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"/>
+
+    <title>Highcharts Sample</title>
+
+    <style>
+    *
+    {
+        //-webkit-tap-highlight-color: rgba(0,0,0,0);
+        text-decoration: none;
+    }
+
+    html,body
+    {
+        -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+        -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+        -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    }
+
+    body
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    </style>
+    
+    <script src="jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript">
+    
+    function drawChart (seriesArray) {
+        $('#container').highcharts({
+                                   chart: {
+                                   type: 'area',
+                                   inverted: true
+                                   },
+                                   title: {
+                                   text: '一周网站访问数据图表'
+                                   },
+                                   xAxis: {
+                                   categories: [
+                                                '周一',
+                                                '周二',
+                                                '周三',
+                                                '周四',
+                                                '周五',
+                                                '周六',
+                                                '周日'
+                                                ]
+                                   },
+                                   yAxis: {
+                                   title: {
+                                   text: '访问量'
+                                   },
+                                   labels: {
+                                   formatter: function() {
+                                   return this.value;
+                                   }
+                                   },
+                                   min: 0
+                                   },
+                                   plotOptions: {
+                                   area: {
+                                   fillOpacity: 0.5
+                                   }
+                                   },
+                                   tooltip: {
+                                   pointFormat: '{series.name} 被访问了 <b>{point.y:,.0f}</b> 次'
+                                   },
+                                   series: seriesArray,
+                                   
+                                   // 去掉右下角网址 logo
+                                   credits: {
+                                   enabled: false
+                                   }
+                                   });
+    }
+    
+    </script>
+
+</head>
+
+<body style="background:#CDE; color:#FFF">
+
+
+<script src="highcharts.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 10px 5px 10px 5px; padding: 0"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+
+	<title></title>
+<script type="text/javascript">
+    //方法1 直接改变当前页面的url 这种方法在电脑浏览器中会直接跳转,在手机中正常
+    function callOC(func,param){
+        var url= "myapp:" + "&func=" + func;
+        for(var i in param)
+        {
+            url = url + "&" + i + "=" + param[i];
+            //alert(i);
+            //alert(param[i]);
+        }
+        document.location = url;
+        //document.location="myapp:func&param1=value1&param2=value2...".
+    }
+    //方法2 动态添加个iframe改变其地址 最后删除,这种方法不会使当前页面跳转 效果更佳
+    function callOC2(func,param){
+        var iframe = document.createElement("iframe");
+        var url= "myapp:" + "&func=" + func;
+        for(var i in param)
+        {
+            url = url + "&" + i + "=" + param[i];
+        }
+        iframe.src = url;
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+        iframe.parentNode.removeChild(iFrame);
+        iframe = null;
+    }
+	function callFunc(){
+        var stack = new Array();
+        stack["first"] = 3;
+        stack["second"] = "second";
+        stack["third"]  = new Date();
+    	callOC("callFunc",stack);
+	}
+    function testAlert(){
+        alert("捕获了webview的alert");
+    }
+</script>
+</head>
+<body>
+方法1<br>
+<input type="text"/>
+<input type="button" value="js callFunc" onclick="callFunc()" />
+
+<input type="button" value="打个招呼" onclick="callOC('alert',{'message':'你好么'})" />
+
+<input type="button" value="add个view" onclick="callOC('addSubView',{'view':'UIWebView','tag':'11111','urlstring':'http://www.baidu.com','frame':'{{0,150},{320,300}}'})" />
+
+<input type="button" value="传个字典" onclick="callOC('testFunc',{'param1':76,'param2':155,'param3':76})" />
+
+
+<input type="button" value="捕获修改原生alert" onclick="testAlert()" />
+
+<hr>
+方法2<br>
+<input type="text"/>
+
+<input type="button" value="打个招呼" onclick="callOC2('alert',{'message':'你好么'})" />
+
+<input type="button" value="add个view" onclick="callOC2('addSubView',{'view':'UIWebView','tag':'11111','urlstring':'http://www.baidu.com','frame':'{{0,250},{320,300}}'})" />
+
+<input type="button" value="传个字典" onclick="callOC2('testFunc',{'param1':76,'param2':155,'param3':76})" />
+
+
+</body>
+</html>

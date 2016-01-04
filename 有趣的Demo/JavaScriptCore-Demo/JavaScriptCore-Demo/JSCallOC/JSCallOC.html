@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"/>
+    
+    <title>JSCallOC</title>
+    
+    <style>
+        *
+        {
+            //-webkit-tap-highlight-color: rgba(0,0,0,0);
+            text-decoration: none;
+        }
+    
+        html,body
+        {
+            -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+            -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+            -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+        }
+    
+        #div-a
+        {
+            background:#FBA;
+            color:#FFF;
+
+            border-radius: 25px 5px;
+        }
+
+
+    </style>
+    
+    <script type="text/javascript">
+        
+        function showResult(resultNumber)
+        {
+            //alert(resultNumber);
+            document.getElementById("result").innerText = resultNumber;
+        }
+    
+    </script>
+    
+</head>
+
+<body style="background:#CDE; color:#FFF">
+    
+    <div>
+        <font size="3" color="black">输入一个整数：</font>
+        <textarea  id="input" style="font-size:10pt;color:black;"></textarea>
+    </div>
+    <br/>
+    
+    <div>
+        <font size="3" color="black">结果： <b id="result"> </b> </font>
+    </div>
+    <br/>
+    
+    <div id="div-a">
+        <center>
+            
+            <br/>
+            <input type="button" value="计算阶乘" onclick="native.calculateForJS(input.value);" />
+            <br/>
+            <br/>
+            
+            
+            <input type="button" value="测试log" onclick="log('测试');" />
+            <br/>
+            <br/>
+            
+            <input type="button" value="oc原生Alert" onclick="alert('alert');" />
+            <br/>
+            <br/>
+            
+            <input type="button" value="addSubView" onclick="addSubView('view');" />
+            <br/>
+            <br/>
+            
+            <a id="push" href="#" onclick="native.pushViewControllerTitle('SecondViewController','secondPushedFromJS');">
+                push to second ViewController
+            </a>
+            
+            <br/>
+            <br/>
+            
+        </center>
+    </div>
+
+    
+    
+</body>
+
+</html>
