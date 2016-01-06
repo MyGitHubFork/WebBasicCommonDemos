@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>iRock - The Virtual Pet Rock</title>
+
+	<script type="text/javascript">
+	function touchRock(){
+		var userName = prompt("你的名字是什么？","在这里输入你的名字.")
+		if (userName) {
+			alert("很高兴见到你," + userName + ".");
+			document.getElementById("rockImg").src = "rock_happy.png";
+		};
+	}
+	</script>
+</head>
+<body onload="alert('你好，我是你的宠物猪');">
+	<div style="margin-top:100px text-align:center">
+		<img id="rockImg" src="rock.png" alt="iRock" style="cursor:pointer" onclick="touchRock();">
+	</div>
+</body>
+</html>
