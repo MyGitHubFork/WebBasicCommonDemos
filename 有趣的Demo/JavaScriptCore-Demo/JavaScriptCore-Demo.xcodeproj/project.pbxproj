@@ -53,7 +53,7 @@
 		A21E7E441A4CE746009BEB8E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		A21E7E451A4CE746009BEB8E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		A21E7E461A4CE746009BEB8E /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
-		A21E7E491A4CE866009BEB8E /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
+		A21E7E491A4CE866009BEB8E /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = test.js; path = ../test.js; sourceTree = "<group>"; };
 		A21E7E4B1A4CFB81009BEB8E /* JSCallOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSCallOC.html; sourceTree = "<group>"; };
 		A21E7E4D1A4CFCA8009BEB8E /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		A21E7E4E1A4CFCA8009BEB8E /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
@@ -114,7 +114,6 @@
 				A26269191A4CF75B00E566D7 /* JSCallOC */,
 				A262691A1A4CF75B00E566D7 /* OCCallJS */,
 				A21E7E521A4D037C009BEB8E /* HighcharsWebView */,
-				A21E7E491A4CE866009BEB8E /* test.js */,
 				A21E7E221A4CE721009BEB8E /* AppDelegate.h */,
 				A21E7E231A4CE721009BEB8E /* AppDelegate.m */,
 				A21E7E441A4CE746009BEB8E /* RootViewController.h */,
@@ -183,6 +182,7 @@
 		A262691A1A4CF75B00E566D7 /* OCCallJS */ = {
 			isa = PBXGroup;
 			children = (
+				A21E7E491A4CE866009BEB8E /* test.js */,
 				A26269201A4CF7C600E566D7 /* OCCallJSViewController.h */,
 				A26269211A4CF7C600E566D7 /* OCCallJSViewController.m */,
 				A26269221A4CF7C600E566D7 /* OCCallJSViewController.xib */,

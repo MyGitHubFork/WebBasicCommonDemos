@@ -15,11 +15,11 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
-		9CB12DBF13432DF3001F9BA9 /* jquery-1.4.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 9CB12DBD13432DEA001F9BA9 /* jquery-1.4.4.min.js */; };
+		4D718E8A1C3E3FBB0042C3DE /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 4D718E871C3E3FBB0042C3DE /* index.html */; };
+		4D718E8B1C3E3FBB0042C3DE /* jquery-1.4.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 4D718E881C3E3FBB0042C3DE /* jquery-1.4.4.min.js */; };
+		4D718E8C1C3E3FBB0042C3DE /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 4D718E891C3E3FBB0042C3DE /* script.js */; };
 		9CDE08C3133DDB5800BC5FFC /* JavaScriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE08C2133DDB5800BC5FFC /* JavaScriptBridge.m */; };
 		9CDE08DB133DEE1D00BC5FFC /* JavaScriptBridgeReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE08DA133DEE1D00BC5FFC /* JavaScriptBridgeReceiver.m */; };
-		9CDE08F8133DF83F00BC5FFC /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9CDE08F6133DF83F00BC5FFC /* index.html */; };
-		9CDE08FA133DF85500BC5FFC /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 9CDE08F7133DF83F00BC5FFC /* script.js */; };
 		9CDE09A6133F4A6200BC5FFC /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE09A5133F4A6200BC5FFC /* NSStringAdditions.m */; };
 		9CDE09D7133FF87800BC5FFC /* JavaScriptBridgeURLConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE09D6133FF87800BC5FFC /* JavaScriptBridgeURLConnectionDelegate.m */; };
 /* End PBXBuildFile section */
@@ -37,15 +37,15 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D718E871C3E3FBB0042C3DE /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		4D718E881C3E3FBB0042C3DE /* jquery-1.4.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.4.4.min.js"; sourceTree = "<group>"; };
+		4D718E891C3E3FBB0042C3DE /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* JSBridgeTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JSBridgeTest-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		9C5882A813599B1C000E1184 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = ../JavaScriptBridge/Util.h; sourceTree = SOURCE_ROOT; };
-		9CB12DBD13432DEA001F9BA9 /* jquery-1.4.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-1.4.4.min.js"; path = "html/jquery-1.4.4.min.js"; sourceTree = "<group>"; };
 		9CDE08C1133DDB5800BC5FFC /* JavaScriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JavaScriptBridge.h; path = ../JavaScriptBridge/JavaScriptBridge.h; sourceTree = SOURCE_ROOT; };
 		9CDE08C2133DDB5800BC5FFC /* JavaScriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JavaScriptBridge.m; path = ../JavaScriptBridge/JavaScriptBridge.m; sourceTree = SOURCE_ROOT; };
 		9CDE08D9133DEE1D00BC5FFC /* JavaScriptBridgeReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JavaScriptBridgeReceiver.h; path = ../JavaScriptBridge/JavaScriptBridgeReceiver.h; sourceTree = SOURCE_ROOT; };
 		9CDE08DA133DEE1D00BC5FFC /* JavaScriptBridgeReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JavaScriptBridgeReceiver.m; path = ../JavaScriptBridge/JavaScriptBridgeReceiver.m; sourceTree = SOURCE_ROOT; };
-		9CDE08F6133DF83F00BC5FFC /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = html/index.html; sourceTree = "<group>"; };
-		9CDE08F7133DF83F00BC5FFC /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = script.js; path = html/script.js; sourceTree = "<group>"; };
 		9CDE09A4133F4A6200BC5FFC /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSStringAdditions.h; path = ../JavaScriptBridge/NSStringAdditions.h; sourceTree = SOURCE_ROOT; };
 		9CDE09A5133F4A6200BC5FFC /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringAdditions.m; path = ../JavaScriptBridge/NSStringAdditions.m; sourceTree = SOURCE_ROOT; };
 		9CDE09D5133FF87800BC5FFC /* JavaScriptBridgeURLConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JavaScriptBridgeURLConnectionDelegate.h; path = ../JavaScriptBridge/JavaScriptBridgeURLConnectionDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -96,6 +96,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4D718E861C3E3FBB0042C3DE /* html */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -118,9 +119,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9CDE08F6133DF83F00BC5FFC /* index.html */,
-				9CDE08F7133DF83F00BC5FFC /* script.js */,
-				9CB12DBD13432DEA001F9BA9 /* jquery-1.4.4.min.js */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* JSBridgeTest-Info.plist */,
@@ -136,6 +134,16 @@
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D718E861C3E3FBB0042C3DE /* html */ = {
+			isa = PBXGroup;
+			children = (
+				4D718E871C3E3FBB0042C3DE /* index.html */,
+				4D718E881C3E3FBB0042C3DE /* jquery-1.4.4.min.js */,
+				4D718E891C3E3FBB0042C3DE /* script.js */,
+			);
+			path = html;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +198,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CB12DBF13432DF3001F9BA9 /* jquery-1.4.4.min.js in Resources */,
-				9CDE08F8133DF83F00BC5FFC /* index.html in Resources */,
-				9CDE08FA133DF85500BC5FFC /* script.js in Resources */,
+				4D718E8C1C3E3FBB0042C3DE /* script.js in Resources */,
+				4D718E8A1C3E3FBB0042C3DE /* index.html in Resources */,
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				4D718E8B1C3E3FBB0042C3DE /* jquery-1.4.4.min.js in Resources */,
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

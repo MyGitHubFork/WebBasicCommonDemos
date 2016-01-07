@@ -101,7 +101,7 @@
     [self.context[@"showResult"] callWithArguments:@[result]];
 }
 
-- (void)pushViewController:(NSString *)view title:(NSString *)title
+- (void)pushViewController:(NSString *)view title:(NSString *)title name:(NSString *)name
 {
     Class second = NSClassFromString(view);
     id secondVC = [[second alloc]init];

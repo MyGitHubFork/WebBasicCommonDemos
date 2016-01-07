@@ -14,7 +14,8 @@ JSExportAs
 (calculateForJS  /** handleFactorialCalculateWithNumber 作为js方法的别名 */,
  - (void)handleFactorialCalculateWithNumber:(NSNumber *)number
  );
-- (void)pushViewController:(NSString *)view title:(NSString *)title;
+
+- (void)pushViewController:(NSString *)view title:(NSString *)title name:(NSString *)name;
 @end
 
 

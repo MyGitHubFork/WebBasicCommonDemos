@@ -29,16 +29,20 @@
 </body>
 <script>
     (function () {
+     
         var nativeBridge = {
             invoke: function (commandName, args) {
                 console.log(commandName + ": " + JSON.stringify(args, null, 2));
                 window.location = 'js-call:' + commandName + ':' + encodeURIComponent(JSON.stringify(args));
             }
         };
+     
+     
         var updateNativeBtn = document.getElementById('updateNativeBtn');
         var fNameTextField = document.getElementById('fname');
         var lNameTextField = document.getElementById('lname');
         var clickevent = window.ontouchend ? 'touchend' : 'click';
+     
         updateNativeBtn.addEventListener(clickevent, function (evt) {
             evt.preventDefault();
             nativeBridge.invoke('updateNames', {
@@ -46,10 +50,14 @@
                 lname: lNameTextField.value
             });
         });
+     
+     
         window.setNames = function (names) {
             fNameTextField.value = names.fname;
             lNameTextField.value = names.lname;
         }
+     
+     
     })();
 </script>
 </html>
