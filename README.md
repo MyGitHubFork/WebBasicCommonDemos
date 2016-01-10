@@ -52,3 +52,10 @@
 第十一章：前端代码调试。firebug  firefox是推荐的工具。
 
 第十二章： ajax的实现与使用。
+
+
+##学习Head First Html5 Programming
+
+第一章：介绍html5的基本概念和区别。
+
+第二章：javascript的基础介绍。
