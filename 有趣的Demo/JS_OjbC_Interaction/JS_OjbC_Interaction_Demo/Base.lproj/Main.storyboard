@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMd-Cc-kff">
+                                <rect key="frame" x="0.0" y="20" width="600" height="380"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VO1-x4-FkY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.95294117649999999" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PMd-Cc-kff" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6Nm-6u-Xgh"/>
+                            <constraint firstItem="VO1-x4-FkY" firstAttribute="top" secondItem="PMd-Cc-kff" secondAttribute="bottom" id="D9g-9x-DFQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VO1-x4-FkY" secondAttribute="bottom" id="ENz-gw-rpk"/>
+                            <constraint firstItem="VO1-x4-FkY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NdH-6N-oiF">
+                                <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="VO1-x4-FkY" secondAttribute="trailing" id="UaQ-1P-8Sa">
+                                <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="PMd-Cc-kff" secondAttribute="trailing" id="YI6-op-FSU"/>
+                            <constraint firstItem="PMd-Cc-kff" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pR7-fb-Ita"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PMd-Cc-kff" secondAttribute="bottom" constant="200" id="sW1-4s-d5P"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="VO1-x4-FkY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="D9g-9x-DFQ"/>
+                                <exclude reference="NdH-6N-oiF"/>
+                                <exclude reference="UaQ-1P-8Sa"/>
+                                <exclude reference="ENz-gw-rpk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="VO1-x4-FkY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="D9g-9x-DFQ"/>
+                                <include reference="NdH-6N-oiF"/>
+                                <include reference="UaQ-1P-8Sa"/>
+                                <include reference="ENz-gw-rpk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="logLabel" destination="VO1-x4-FkY" id="rhb-Z3-7j7"/>
+                        <outlet property="webView" destination="PMd-Cc-kff" id="kmI-1j-i8i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

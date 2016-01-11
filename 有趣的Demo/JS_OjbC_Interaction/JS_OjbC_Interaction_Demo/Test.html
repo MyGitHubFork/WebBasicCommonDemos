@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <script>
+                function checkStatus() {
+                    var flag = app.appGetFlag();
+                    if (flag) {
+                        alert('true value!');
+                    }
+                    else {
+                        alert('false value');
+                    }
+                }
+            </script>
+            </head>
+    
+    <body>
+        <h2>H5 jump to app view</h2>
+        
+        <input type="button" value="获取bool值" onclick="checkStatus()" /> <br/>
+        <input type="button" value="打印日期" onclick="app.appLogDate()" /> <br/>
+        <input type="button" value="传递消息" onclick="app.appLogMessage('北京市海淀区中关村南大街1号');" /> <br/>
+        <input type="button" value="传递JSON" onclick="app.appLogJSON({'phone':'13133334444'});" /> <br/>
+        <input type="button" value="传递多个参数" onclick="app.appLogMessageAndJSON('测试传递字符串',{'url':'http://baidu.com'});" /> <br/>
+        
+        
+    </body>
+</html>
