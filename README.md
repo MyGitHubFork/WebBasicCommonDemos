@@ -1,5 +1,5 @@
 # HTML5-CSS-JAVASCRIPT
-这是我学前段的一些Demo和总结
+iOS原生代码与html5交互
 
 ##学习Head First  html&css的总结
 
@@ -62,4 +62,12 @@
 
 第三章：javascript的一些基础用法。
 
-第四章：
+第四章：goole map api定位使用
+
+第五章：
+
+第六章：xmlhttprequest使用。
+
+第七章： carvous画布基本使用。画园、画矩形、画文字、话图片
+
+
