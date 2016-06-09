@@ -336,24 +336,107 @@
 // console.log(callSum1(10, 10));
 // console.log(callSum2(10, 10));
 
-window.color = "red";
-var o = {color:"blue"};
-function sayColor(){
-	console.log(this.color);
-}
-sayColor();
-sayColor.call(this);
-sayColor.call(window);
-sayColor.call(o);
-var objectSayColor = sayColor.bind(o);
-objectSayColor();
+// window.color = "red";
+// var o = {color:"blue"};
+// function sayColor(){
+// 	console.log(this.color);
+// }
+// sayColor();
+// sayColor.call(this);
+// sayColor.call(window);
+// sayColor.call(o);
+// var objectSayColor = sayColor.bind(o);
+// objectSayColor();
+
+// var num = 10;
+// console.log(num.toFixed(2));
+// console.log(num.toPrecision(3));
+
+// var numberObject = new Number(10);
+// var numberValue = 10;
+// console.log(typeof numberObject);
+// console.log(typeof numberValue);
+// console.log(numberObject instanceof Number);
+// console.log(numberValue instanceof Number);
+
+// var stringObject = new String("hello world");
+// var stringValue = "hello world";
+// console.log(stringValue.length);
+// console.log(stringValue.charAt(1));
+// console.log(stringValue.charCodeAt(1));
+// console.log(stringValue[1]);
+// stringValue = "hello ";
+// var result = stringValue.concat("world", "!");
+// console.log(result);
+// console.log(stringValue);
+
+// var stringValue = "hello world";
+// alert(stringValue.slice(3));
+// alert(stringValue.substring(3));
+// alert(stringValue.substr(3));
+// alert(stringValue.slice(3, 7));
+// alert(stringValue.substring(3,7));
+// alert(stringValue.substr(3, 7));
+
+// var stringValue = "hello world";
+// console.log(stringValue.indexOf("o", 6));
+// console.log(stringValue.lastIndexOf("o", 6));
+// stringValue = "Lorem ipsum dolor sit amet, consectetur adipisicing elit";
+// var positions = new Array();
+// var pos = stringValue.indexOf("e");
+// while(pos > -1){
+// 	positions.push(pos);
+// 	pos = stringValue.indexOf("e", pos + 1);
+// }
+// console.log(positions);
+
+// var stringValue = "  hello world  ";
+// var trimmedStringValue = stringValue.trim();
+// console.log(stringValue);
+// console.log(trimmedStringValue);
+
+// var text = "cat, bat, sat, fat";
+// var pattern = /.at/g;
+// //与pattern.exec(text)相同
+// var matches = text.match(pattern);
+// console.log(matches.index);
+// console.log(matches);
+// console.log(matches.lastIndex);
+// var pos = text.search(/at/);
+// console.log(pos);
+
+// var text = "cat, bat, sat, fat";
+// var result = text.replace("at", "ond");
+// console.log(result);
+// result = text.replace(/at/g, "ond");
+// console.log(result);
+// result = text.replace(/(.at)/g, "world ($1)");
+// console.log(result);
+
+// function htmlEscape(text) {
+//     return text.replace(/[<>"&]/g, function(match, pos, originalText) {
+//         switch (match) {
+//             case "<":
+//                 return "&lt;";
+//             case ">":
+//                 return "&gt;";
+//             case "&":
+//                 return "&amp;";
+//             case "\"":
+//                 return "&quot;";
+//         }
+//     });
+// }
+// console.log(htmlEscape("<p class=\"greeting\">Hello world!</p>"));
 
 
-
-
-
-
-
+var colorText = "red,blue,green,yellow";
+var colors1 = colorText.split(",");
+var colors2 = colorText.split(",", 2);
+var colors3 = colorText.split(/[^\,]+/);
+console.log(colors1);
+console.log(colors2);
+console.log(colors3);
 
 
 
