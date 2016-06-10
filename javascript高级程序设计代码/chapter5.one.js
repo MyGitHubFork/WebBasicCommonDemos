@@ -430,13 +430,72 @@
 // console.log(htmlEscape("<p class=\"greeting\">Hello world!</p>"));
 
 
-var colorText = "red,blue,green,yellow";
-var colors1 = colorText.split(",");
-var colors2 = colorText.split(",", 2);
-var colors3 = colorText.split(/[^\,]+/);
-console.log(colors1);
-console.log(colors2);
-console.log(colors3);
+// var colorText = "red,blue,green,yellow";
+// var colors1 = colorText.split(",");
+// var colors2 = colorText.split(",", 2);
+// var colors3 = colorText.split(/[^\,]+/);
+// console.log(colors1);
+// console.log(colors2);
+// console.log(colors3);
+
+// var uri = "http://www.wrox.com/illegal value.htm#start";
+// console.log(encodeURI(uri));
+// console.log(encodeURIComponent(uri));
+// uri = "http%3A%2F%2Fwww.wrox.com%2Fillegal%20value.htm%23start";
+// console.log(decodeURI(uri));
+// console.log(decodeURIComponent(uri));
+
+// eval("function sayHi(){ console.log(\"hi\");}");
+// sayHi();
+
+// var color = "red";
+// function sayColor(){
+// 	console.log(window.color);
+// }
+// window.sayColor();
+
+// //通过这个方式得到global对象。
+// var global = function(){
+// 	return this;
+// }();
+
+// var max = Math.max(3,54,32,16);
+// console.log(max);
+// var min = Math.min(3,54,32,16);
+// console.log(min);
+// var values = [1,2,3,4,5,6,7,8];
+// max = Math.max.apply(Math, values);
+// console.log(max);
+
+console.log(Math.ceil(25.9));
+console.log(Math.round(25.9));
+console.log(Math.round(25.5));
+console.log(Math.round(25.1));
+console.log(Math.floor(25.5));
+var num = Math.floor(Math.random() * 10 + 1);
+console.log(num);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
