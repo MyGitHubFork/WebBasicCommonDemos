@@ -46,3 +46,70 @@
 //     }
 //     return result;
 // }
+
+// var name = "The Window";
+// var object = {
+// 	name: "My Object",
+// 	getNameFunc:function(){
+// 		var that = this;
+// 		return function(){
+// 			return that.name;
+// 		};
+// 	}
+// };
+// console.log(object.getNameFunc()());
+
+//IE9之前
+// function assignHandler(){
+// 	var element = document.getElementById("someElement");
+// 	var id = element.id;
+// 	//闭包会引用element
+// 	element.onclick = function(){
+// 		console.log(id);
+// 	}
+// 	element = null;
+// }
+
+//================================模仿块级作用域======================
+(function(){
+	var now = new Date();
+	if (now.getMonth() == 0 && now.getDate() == 1) {
+		console.log("Happy new year!");
+	}
+})();
+
+//================================私有变量======================
+//我们把有权访问私有变量和私有函数的公有方法称为特权方法
+// function MyObject(){
+// 	var privateVariable = 10;
+// 	function privateFunction(){
+// 		return false;
+// 	}
+// 	//特权方法
+// 	this.publicMethod = function(){
+// 		privateVariable++;
+// 		return privateFunction();
+// 	};
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
