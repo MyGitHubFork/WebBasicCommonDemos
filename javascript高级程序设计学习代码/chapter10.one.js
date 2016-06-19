@@ -109,6 +109,80 @@ document.body.appendChild(div);
 var div = document.createElement("<div id=\"myNewDiv\" class=\"box\"></div >");
 
 //==============================Text类型===========================
+//<div>Hello World!</div>
+var textNode = div.firstChild;
+var textNode = div.childNodes[0];
+div.firstChild.nodeValue = "Some other message";
+
+var element = document.createElement("div");
+element.className = "message";
+var textNode = document.createTextNode("<strong>Hello</strong> world!");
+element.appendChild(textNode);
+document.body.appendChild(element);
+
+//textNode节点合并
+var element = document.createElement("div");
+element.className = "message";
+var textNode = document.createTextNode("Hello world!");
+element.appendChild(textNode);
+var anotherTextNode = document.createTextNode("Yippee!");
+element.appendChild(anotherTextNode);
+document.body.appendChild(element);
+console.log(element.childNodes.length);//2
+element.normalize();//textnode合并
+console.log(element.childNodes.length);//1
+console.log(element.firstChild.nodeValue);//"Hello world!Yippee!"
+
+
+//分割文本节点
+var element = document.createElement("div");
+element.className = "message";
+var textNode = document.createTextNode("Hello world!");
+element.appendChild(textNode);
+document.body.appendChild(element);
+var newNode = element.firstChild.splitText(5);
+console.log(element.firstChild.nodeValue);//Hello
+console.log(newNode.nodeValue);//world!
+console.log(element.childNodes.length);//2
+
+//==============================Comment类型===========================
+//<div id="myDiv"><!--A comment --></div>
+var div = document.getElementById("myDiv");
+var comment = div.firstChild;
+console.log(comment.data);// "A comment"
+
+//==============================CDATASection类型===========================
+
+//==============================DocumentFragment类型===========================
+//批量添加节点
+//<ul id="myList"></ul>
+var fragment = document.createDocumentFragment();
+var ul = document.getElementById("myList");
+var li = null
+for (var i = 0; i < 3; i++) {
+    li = document.createElement("li");
+    li.appendChild(document.createTextNode("Item" + (i + 1)));
+    fragment.appendChild(li);
+}
+ul.appendChild(fragment);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
