@@ -167,8 +167,13 @@ for (var i = 0; i < 3; i++) {
 ul.appendChild(fragment);
 
 
-
-
+//==============================Attr类型===========================
+var attr = document.createAttribute("align");
+vttr.value = "left";
+element.setAttributeNode(attr);
+console.log(element.attributes["align"].value);//left
+console.log(element.getAttributeNode("align").value);//left
+console.log(element.getAttribute("align"));//left
 
 
 
