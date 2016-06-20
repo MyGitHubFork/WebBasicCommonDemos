@@ -22,4 +22,26 @@ div.className = classNames.join(" ");
 
 //html5 实现删除类名
 div.classList.remove("disabled");
-//
+//添加current类
+div.classList.add("current");
+
+
+//焦点管理
+var button = document.getElementById("myButton");
+button.focus();
+console.log(document.activeElement === button);
+
+var button = document.getElementById("myButton");
+button.focus();
+console.log(document.hasFocus());//true
+
+//文档状态
+if (document.readyState == "complete") {
+	console.log("文档加载完毕");
+}else{
+	console.log("文档正在加载");
+}
+
+//字符集属性
+console.log(document.charset);
+document.charset = "UTF-8";
