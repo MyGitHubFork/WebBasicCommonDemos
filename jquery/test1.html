@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    //说明jquery对象和dom对象的区别
+    function testing(){
+        //使用传统的方法获取test
+       var obj1 = document.getElementById("test");
+       //window.alert(obj1.value);
+        //如果是使用jquery对象，规定一个jquery对象的名字$开头
+        var $obj2 = $('#test');
+        //window.alert($obj2.val());
+        
+        //DOM与jquery对象之间的相互转换
+        //dom->jquery
+         var $obj3 = $(obj1);
+         //window.alert($obj3.val());
+        
+        //jquery->dom对象
+        //在jquery开发中，把一个对象当做集合处理
+        //有两种方法：1
+        obj4 = $obj2[0];//obj4是dom对象
+        //alert("obj4 value " + obj4.value);
+        //第二种方法
+        var obj5 = $obj2.get(0);
+        alert("obj5:" + obj5.value);
+        
+        //jquery对象就是对dom对象的包装，这样就可以使用jquery方法。jquery对象和dom对象可以相互转换。
+        
+        //$("#id") 等价于 document.getElementById("id");
+        //$("tagName") 等价于document.getElementByTagName("tagName");
+    }
+</script>
+</head>
+<body>
+   <input type="text" id="test" value="test"/>
+   <input type="button" onclick="testing()" value="点击" /> 
+</body>
+</html>
