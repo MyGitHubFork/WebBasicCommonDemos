@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
+	<entry permitCategories="true"
+		url="http://downloads.zend.com/studio-eclipse/updates/13_5/catalog.jar" />
+</directory>

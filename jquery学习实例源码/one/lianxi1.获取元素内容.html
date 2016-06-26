@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<p>段落1</p>
+<p>段落2</p>
+<p>段落3</p>
+
+<script type="text/javascript">
+	$("p").click(function(){
+		//this表示当前被点击的元素，但是此时我们把它当做dom对象
+		//如果不是当成dom对象，$(this)表示当前被点击元素的jquery对象
+		//window.alert(this.innerHTML);
+		window.alert($(this).html());
+	});
+</script>
+</body>
+</html>
