@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>ddd</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		 	div,span{
+			    width: 140px;
+			    height: 140px;
+			    margin: 20px;
+			    background: #9999CC;
+			    border: #000 1px solid;
+				float:left;
+			    font-size: 17px;
+			    font-family:Roman;
+			}
+			div.mini{
+			    width: 30px;
+			    height: 30px;
+			    background: #CC66FF;
+			    border: #000 1px solid;
+			    font-size: 12px;
+			    font-family:Roman;
+			}
+	 </style>
+	 <script type="text/javascript" src="js/jquery-1.3.1.js"></script>
+    
+	</head>
+	<body>
+		<h1>XXXX</h1>
+		<h2>XXXXXXX</h2>
+		<h3>XXXXXXXXX</h3>
+		
+		 <input type="button" value="改变第一个 div 元素的背景色为 #0000FF"  id="b1"/>
+		 <input type="button" value="改变最后一个 div 元素的背景色为 #0000FF"    id="b2"/>
+		 <input type="button" value=" 改变class不为 one 的所有 div 元素的背景色为 #0000FF"  id="b3"/>
+		 <input type="button" value=" 改变索引值为偶数的 div 元素的背景色为 #0000FF"  id="b4"/>
+		  <input type="button" value=" 改变索引值为奇数的 div 元素的背景色为 #0000FF"  id="b5"/>
+		 <input type="button" value=" 改变索引值为大于 3 的 div 元素的背景色为 #0000FF"  id="b6"/>
+		 <input type="button" value=" 改变索引值为等于 3 的 div 元素的背景色为 #0000FF"  id="b7"/>
+		 <input type="button" value=" 改变索引值为小于 3 的 div 元素的背景色为 #0000FF"  id="b8"/>
+	     <input type="button" value=" 改变所有的标题元素的背景色为 #0000FF"  id="b9"/>
+	     <input type="button" value=" 改变当前正在执行动画的所有元素的背景色为 #0000FFF"  id="b10"/>
+	     <div id="one"  class="mini">
+	    	 div id为one  
+		 </div>
+		 <div id="two">
+		 	 div id为two
+			 <div id="two01">
+			 	id twoo1
+			 </div>
+			 <div id="two02">
+			 	id twoo2
+			 </div>
+		 </div>
+		 <div id="three"  class="one" >
+	    	 div id为three   class one
+			 <div id="three01">
+			 	id three01
+			 </div>
+		 </div>
+		  <div id="mover">
+	    	 执行动画
+		 </div>
+		 <span id="s_one"  class="mini">
+		 	span  one
+		 </span>
+		 <span id="s_two">
+		 	span two
+		 </span>		
+	</body>
+     
+	<script language="JavaScript">
+	//做动画
+	function ca(){
+		$("#mover").slideToggle("fast",ca);
+	}
+	//调用
+	ca();
+
+
+	//改变第一个div的背景颜色
+		// $("#b1").click(function(){
+		// 	$("div:first").css("background","#0000FF");
+		// });
+		//或者
+		$("#b1").click(function(){
+			$("div:eq(0)").css("background","#0000FF");
+		});
+
+	//改变最后一个div元素的背景颜色  所谓最后一个指的是从上到下  从左到右去搜索。
+	$("#b2").click(function(){
+		$("div:last").css("background","#0000FF");
+	});
+
+	//改变class不为one的所有div的背景颜色为#0000FF
+	$("#b3").click(function(){
+		$("div:not(.one)").css("background","#0000FF");
+	});
+
+	//改变索引值为偶数的div  背影颜色为#0000FF
+	$("#b4").click(function(){
+		//:表示过滤
+		$("div:even").css("background","#0000FF");
+	});
+
+	//改变所有索引大于3的div元素的背景颜色 ”#0000FF“
+	$("#b6").click(function(){
+		$("div:gt(3)").css("background","#0000FF");
+	});
+
+	//改变所有索引等于3的div元素的背景颜色 ”#0000FF“
+	$("#b7").click(function(){
+		$("div:eq(3)").css("background","#0000FF");
+	});
+
+	//改变所有索引小于3的div元素的背景颜色 ”#0000FF“
+	$("#b8").click(function(){
+		$("div:lt(3)").css("background","#0000FF");
+	});
+
+	//改变所有的标题元素的背景颜色为#0000FF
+	$("#b9").click(function(){
+		$(":header").css("background", "#0000FF");
+	});
+
+	//改变正在执行动画效果的元素的背景颜色为#0000FF
+	$("#b10").click(function(){
+		$(":animated").css("background", "red");
+	});
+    </script>
+   
+</html>
+
+
+

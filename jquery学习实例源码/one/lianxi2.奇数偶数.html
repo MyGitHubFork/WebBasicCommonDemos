@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.3.1.js"></script>
+</head>
+
+<body>
+    <h1>第一个表格</h1>
+    <table border="1" width="400px">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>6</td>
+        </tr>
+    </table>
+    <h1>第二个表格</h1>
+    <table border="1" width="400px">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>6</td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript">
+$("table:eq(0) tr:even").css("background", "red");
+$("table:eq(0) tr:odd").css("background", "blue");
+
+
+$("table:eq(1) tr:even").css("background", "green");
+$("table:eq(1) tr:odd").css("background", "yellow");
+</script>
+
+</html>>
