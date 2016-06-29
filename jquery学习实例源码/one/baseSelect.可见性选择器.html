@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>ddd</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		 	div,span{
+			    width: 140px;
+			    height: 140px;
+			    margin: 20px;
+			    background: #9999CC;
+			    border: #000 1px solid;
+				float:left;
+			    font-size: 17px;
+			    font-family:Roman;
+			}
+			
+			div.mini{
+			    width: 30px;
+			    height: 30px;
+			    background: #CC66FF;
+			    border: #000 1px solid;
+			    font-size: 12px;
+			    font-family:Roman;
+			}
+			
+
+			div.visible{
+				display:none;
+			}
+	 </style>
+	 <!--引入jquery的js库-->
+	 <script type="text/javascript" src="js/jquery-1.3.1.js"></script>
+    
+	</head>
+	 
+	<body>
+		<h1>XXXX</h1>
+		<h2>XXXXXXX</h2>
+		<h3>XXXXXXXXX</h3>
+		
+		 <input type="button" value="改变所有可见的div元素的背景色为 #0000FF"  id="b1"/>
+		 <input type="button" value="选取所有不可见的元素, 利用 jQuery 中的 show() 方法将它们显示出来, 并设置其背景色为 #0000FF"    id="b2"/>
+		 <input type="button" value=" 选取所有的文本隐藏域, 并打印它们的值"  id="b3"/>
+		
+		 
+		 <input type="hidden" value="hidden1"/>
+		 <input type="hidden" value="hidden2"/>
+		 <input type="hidden" value="hidden3"/>
+		 <input type="hidden" value="hidden4"/>
+		 
+	     <div id="one"  class="visible">
+	    	 div id为one  
+		 </div>
+		 
+		 <div id="two"    class="visible">
+		 	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+		 </div>
+		 
+		 <div id="three"  class="one" >
+	    	XXXXXXXXX
+		 </div>
+		 
+		 
+		
+	</body>
+     
+	<script language="JavaScript">
+	
+	//*****改变所有可见的div元素的背景色为 #0000FF
+	$("#b1").click(function(){
+		$("div:visiable").css("background","#0000FF");
+	});
+	//**选取所有不可见的元素, 利用 jQuery 中的 show() 方法将它们显示出来, 并设置其背景色为 #0000FF
+	$("#b2").click(function(){
+		$(":hidden").css("background","#0000FF");
+		$(":hidden").show();//把隐藏的显示出来
+		//传统方法 遍历 通过style:visible
+
+	});
+	//**选取所有的文本隐藏域, 并打印它们的值
+	$("#b3").click(function(){
+		$objs = $("input:hidden");
+		//jquery对象->dom对象
+		//var dom_obj = $objs[2];
+		//for (var i = 0; i < $objs.length; i++) {
+			//var dom_obj =  $objs[i];
+			//window.alert(dom_obj.value);
+			//jquery直接求职
+			//window.alert($objs[i].val());
+		//}
+
+		//jquery实现，在jquery中，提供了一个 each来遍历我们的对象和数组(这个非常重要)
+		//如何使用数组对each遍历 
+		$.each($objs, function(i,obj){
+			//相当于，每次循环一次，i自动增一次 obj = $obj[i]
+			window.alert("jQuery " + $(obj).val());
+			window.alert("dom " + obj.value);
+		});
+		//this = $objs[i]
+		// $.each($objs,function(){
+		// 	window.alert("dom " + this.value);
+		// 	window.alert("jQuery " + $(this).val());
+		// });
+
+	});
+	</script>
+   
+</html>
+
+
+
