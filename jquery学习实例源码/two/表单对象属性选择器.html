@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <title>ddd</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+    div,
+    span {
+        width: 140px;
+        height: 140px;
+        margin: 20px;
+        background: #9999CC;
+        border: #000 1px solid;
+        float: left;
+        font-size: 17px;
+        font-family: Roman;
+    }
+    
+    div.mini {
+        width: 30px;
+        height: 30px;
+        background: #CC66FF;
+        border: #000 1px solid;
+        font-size: 12px;
+        font-family: Roman;
+    }
+    
+    div.visible {
+        display: none;
+    }
+    </style>
+    <!--引入jquery的js库-->
+    <script type="text/javascript" src="js/jquery-1.3.1.js"></script>
+</head>
+
+<body>
+    <h1>XXXX</h1>
+    <h2>XXXXXXX</h2>
+    <h3>XXXXXXXXX</h3>
+    <input type="button" value="利用 jQuery 对象的 val() 方法改变表单内 type=text 可用 <input> 元素的值" id="b1" />
+    <input type="button" value="利用 jQuery 对象的 val() 方法改变表单内 type=text 不可用 <input> 元素的值" id="b2" />
+    <input type="button" value="利用 jQuery 对象的 length 属性获取多选框选中的个数" id="b3" />
+    <input type="button" value="利用 jQuery 对象的 text() 方法获取下拉框选中的内容" id="b4" />
+    <br>
+    <input type="text" value="篮球1" />
+    <input type="text" value="篮球2" />
+    <input type="text" value="篮球3" disabled="true" />
+    <input type="text" value="篮球4" disabled="true" />
+    <br>
+    <input type="checkbox" value="爱好1" />爱好1
+    <input type="checkbox" value="爱好2" />爱好2
+    <input type="checkbox" value="爱好3" />爱好3
+    <input type="checkbox" value="爱好4" />爱好4
+    <br>
+    <br>
+    <select name="job" size=9 multiple="multiple">
+        <option value="选项1">选项1^^</option>
+        <option value="选项2">选项2^^</option>
+        <option value="选项3">选项3^^</option>
+        <option value="选项4">选项4^^</option>
+        <option value="选项5">选项5^^</option>
+        <option value="选项6">选项6^^</option>
+    </select>
+    <select id="hsp" name="edu">
+        <option value="博士">博士^^</option>
+        <option value="硕士">硕士^^</option>
+        <option value="本科">本科^^</option>
+        <option value="小学">小学^^</option>
+    </select>
+</body>
+<!-- /**总结一下过滤器使用的方式：
+$("div:contains('div')");//内容
+$("div[type]")//属性
+$("div.one")//选中div中含class为.one的div元素
+*/ -->
+<script language="JavaScript">
+//*利用 jQuery 对象的 val() 方法改变表单内 type=text 可用 <input> 元素的值
+	$("#b1").click(function(){
+		$("input[type='text']:enabled").val("hello");
+	});
+//**利用 jQuery 对象的 length 属性获取多选框选中的个数
+	$("#b3").click(function(){
+		//alert($(":checkbox:checked").length);
+		alert($("input[type='checkbox']:checked").length);
+	});
+//****利用 jQuery 对象的 text() 方法获取下拉框选中的内容
+	$("#b4").click(function(){
+		//alert($("select option:selected").text());
+
+		//用val实现、val默认打印返回的第一个元素的内容
+		 var $objs = $("select option:selected");
+		// $.each($objs, function(){
+		// 	alert($(this).val());
+		// });
+
+		// var objs = $("select option:selected");
+		// $.each($objs, function(i,n){
+		// 	//alert(n.value);
+		// 	alert($(n).val());
+		// });
+
+		// $objs.each(function(){
+		// 	alert($(this).val());
+		// });
+
+		$objs.each(function(i,n){
+			alert($(n).val());
+		});
+	});
+
+</script>
+
+</html>

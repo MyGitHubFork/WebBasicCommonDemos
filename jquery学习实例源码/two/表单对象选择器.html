@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <title>ddd</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     <script type="text/javascript" src="js/jquery-1.3.1.js"></script>
+    <style type="text/css">
+    div,
+    span {
+        width: 140px;
+        height: 140px;
+        margin: 20px;
+        background: #9999CC;
+        border: #000 1px solid;
+        float: left;
+        font-size: 17px;
+        font-family: Roman;
+    }
+    
+    div.mini {
+        width: 30px;
+        height: 30px;
+        background: #CC66FF;
+        border: #000 1px solid;
+        font-size: 12px;
+        font-family: Roman;
+    }
+    </style>
+    <!--引入jquery的js库-->
+</head>
+
+<body>
+    <form>
+        <input type="text" />
+        <br/>
+        <input type="checkbox" />
+        <br/>
+        <input type="radio" />
+        <br/>
+        <input type="image" />
+        <br/>
+        <input type="file" />
+        <br/>
+        <input type="submit" />
+        <br/>
+        <input type="reset" />
+        <br/>
+        <input type="password" />
+        <br/>
+        <input type="button" value="按钮1" />
+        <br/>
+        <select>
+            <option/>
+        </select>
+        <br/>
+        <textarea></textarea>
+        <br/>
+        <button>按钮2</button>
+        <br/>
+    </form>
+</body>
+<script language="JavaScript">
+	//选择所有的button
+	var buttons = $(":button");
+	window.alert(buttons.length);
+	//选择input类型中的button
+	var buttons = $("input[type='button']");
+	window.alert(buttons.length);
+</script>
+
+</html>
