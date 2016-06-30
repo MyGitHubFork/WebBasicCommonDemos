@@ -29,7 +29,6 @@
 	 <!--引入jquery的js库-->
 	 <script type="text/javascript" src="js/jquery-1.3.1.js"></script>
 	</head>
-	 
 	<body>
 		<h1>XXXX</h1>
 		<h2>XXXXXXX</h2>
@@ -101,7 +100,9 @@
 	 //选取有属性id的div元素，然后在结果中选取属性title值含有“es”的 div 元素
 	 //我们的过滤方式有两种 :
 	 //比如选出文本中含有  abc的 div  $("div:contains['abc']")
-	 
+	 $("#b7").click(function(){
+	 	$("div[id][title*='es']").css("background","red");
+	 });
     </script>
 </html>
 
