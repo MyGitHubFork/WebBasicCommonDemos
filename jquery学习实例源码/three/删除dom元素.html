@@ -42,27 +42,30 @@
 			<li id="cq" name="chuangqi">传奇</li>
   	    </ul>
 		
-		<input type="button" id="b1" value="使用外部插入法 在上海后面创建一个反恐li,并指定id和name"/><br/>
-		<input type="button" id="b2" value="使用外部插入法 把反恐li移动天津后"/>考虑还有什么...<br/>
-		<input type="button" id="b3" value="使用内部插入法 把反恐li移动天津后"/>考虑还有什么...<br/>
+		<p>Hello</p> how are <p>you?</p> 
 		
+		
+		<p name="test">Hello, <span>Person</span> <a href="#">and person</a></p> 
+		
+		<input type="button" value="删除所有p" id="b1"/>
+		<input type="button" value="所有p清空" id="b2"/>
+		<input type="button" value="删除上海这个li" id="b3"/>
 	</body>
 	<script language="JavaScript">
-	
-	//****使用外部插入法 把反恐li移动天津后
-	$('#b2').click(function(){
-		$("#tj").after($('#fk'));
+      
+	  //*****删除所有p
+	 $("#b1").click(function(){
+	 	$("p").remove();
+	 });
+	 //***所有p清空
+	 $("#b2").click(function(){
+	 	$("p").empty();
+	 });
+	 //****删除上海这个li
+	$("#b3").click(function(){
+		$("#sh").remove();
 	})
 	
-	//****使用内部插入法 把反恐li移动天津后
-	$('#b3').click(function(){
-		$('#city').append($('#fk'));
-	})
-	
-	  
     </script>
    
 </html>
-
-
-
