@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>渐变效果</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    #div1 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #333;
+        background: -webkit-linear-gradient(top, #FFFFFF, #f8f8f8);/*浏览器*/
+        background: -moz-linear-gradient(top, #FFFFFF, #f8f8f8);/*火狐浏览器*/
+        background: -ms-linear-gradient(top, #FFFFFF, #f8f8f8);/*ie浏览器*/
+        background: linear-gradient(top, #FFFFFF, #f8f8f8);/*其他浏览器*/
+        -ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";/*IE9*/
+		+background:#f9f9f9;/*IE6/7*/
+    }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div>
+</body>
+
+</html>
