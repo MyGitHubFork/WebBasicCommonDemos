@@ -178,11 +178,12 @@ body{
     width: 350px;
     height: 200px;
     background: #FF9;
+    margin-bottom: 10px;
 }
 
 .main_ad {
     border-radius: 6px;
-    /*overflow: hidden;/*隐藏溢出*/
+    /*overflow: hidden;*/
     margin-bottom: 10px;
 }
 
@@ -216,6 +217,8 @@ body{
 #footer {
     width: 958px;
     height: 78px;
+    position: relative;
+    clear: both;
     border: 1px solid #dbdbdb;
     background: #f9f9f9;
     border-radius: 6px;
