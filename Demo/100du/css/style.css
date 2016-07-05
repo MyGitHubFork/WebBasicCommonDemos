@@ -1,0 +1,131 @@
+@charset "utf-8"
+/*==========================样式重置===================*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+dl,
+dd,
+ul,
+ol,
+form,
+input,
+textarea,
+th,
+td,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*内边距和外边距都是0*/
+
+em {
+    font-style: normal;
+}
+
+
+/*强调内容不用斜体*/
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*去除下划线*/
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+
+/*没有边框、靠顶部*/
+
+table {
+    border-collapse: collapse;
+}
+
+
+/*边框合并在一起*/
+
+input,
+textarea {
+    outline: none;
+}
+
+
+/*不要轮廓*/
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑"
+}
+/*=============================公共样式=======================*/
+.fl {
+    float: left;
+}
+
+
+/*左浮动*/
+
+.fr {
+    float: right;
+}
+
+
+/*右浮动*/
+
+.clear {
+    zoom: 1;/*设置或检索对象的缩放比例，清除浮动、清除margin的重叠*/
+}
+
+
+/*清除浮动ie浏览器*/
+
+.clear {
+    content: '';
+    display: block;/* 属性规定元素应该生成的框的类型。block表示此元素将显示为块级元素，此元素前后会带有换行符。*/
+    clear: both;
+}
+
+/*清除浮动 非IE浏览器*/
+
+/*=========================layout样式===========================*/
+#header{}
+
+#nav{}
+
+#search{}
+
+.content{}
+
+.main{}
+
+.section{}
+
+.options{}
+
+.main_ad{}
+
+.side{}
+
+.side_section{}
+
+.size_ad{}
+
+#footer{}

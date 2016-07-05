@@ -1,3 +1,7 @@
+/*
+////////////////////////////////////let和const命令/////////////////////////////////////////
+*/
+
 //let的作用基本与var相同，区别是let声明的变量只在所在代码块里面有用。
 {
 	let a = 10;
@@ -79,3 +83,50 @@ var a = 1;
 console.log(window.a);
 let b = 1;
 console.log(window.b); //报错
+
+
+/*
+////////////////////////////////////变量的解构赋值/////////////////////////////////////////
+*/
+//按照一定的模式、从数组和对象中提取值，对变量进行赋值，被称为解构
+let [foo,[[bar],baz]] = [1,[[2],3]];
+console.log("foo="+ foo + "bar=" + bar +"baz=" + baz);
+let [,,third] = ["foo","bar","baz"];
+console.log(third);
+let [x,,y] = [1,2,3];
+console.log("x=" + x + "y=" + y);
+let [head,...tail] = [1,2,3,4];
+console.log("head=" + head + "tail" + tail);
+//运行结果如下
+// foo=1bar=2baz=3
+// baz
+// x=1y=3
+// head=1tail2,3,4
+
+//如果解构不成功，变量的值都会等于undefined。不完全解构也能成功，及左边的模式不完全等于右边的数组。
+let [x,y] = [1,2,3];
+console.log("x=" + 1 + "y=" + y);
+let [a,[b],c] = [1,[2,3],4];
+console.log("a=" + a + "b=" + b +"c=" + c);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
