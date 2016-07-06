@@ -107,6 +107,8 @@ body {
     /* 属性规定元素应该生成的框的类型。block表示此元素将显示为块级元素，此元素前后会带有换行符。*/
     clear: both;
 }
+
+
 /*清除浮动 非IE浏览器*/
 
 .gradient {
@@ -127,21 +129,45 @@ body {
 
 /*=========================layout样式===========================*/
 
-body{
+
+/*公共样式*/
+
+#header,
+#nav,
+.content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#search,
+.section,
+.side_section,
+.ad_border,
+#footer {
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+}
+
+.section,
+.options,
+.main_ad,
+.side_section,
+.ad_border,
+.side_ad {
+    margin-bottom: 10px;
+}
+
+body {
     margin-bottom: 30px;
 }
 
 #header {
     height: 30px;
-    width: 960px;
-    margin: 0 auto;/*居中*/
-    border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px;
 }
 
 #nav {
     height: 100px;
-    width: 960px;
-    margin: 0 auto;
     background: #FFC;
 }
 
@@ -149,17 +175,9 @@ body{
     width: 958px;
     height: 114px;
     margin: 0 auto 10px;
-    border: 1px solid #dbdbdb;
-    border-radius: 6px;
-
 }
 
-#search .bar{}
-
-.content {
-    width: 960px;
-    margin: 0 auto;
-}
+#search .bar {}
 
 .main {
     width: 710px;
@@ -168,23 +186,19 @@ body{
 .section {
     width: 318px;
     height: 200px;
+    /*3333*/
     padding: 0 15px;
-    border: 1px solid #dbdbdb;
-    border-radius: 6px;
-    margin-bottom: 10px;
 }
 
 .options {
     width: 350px;
     height: 200px;
-    background: #FF9;
-    margin-bottom: 10px;
+    /*3333*/
 }
 
 .main_ad {
     border-radius: 6px;
     /*overflow: hidden;*/
-    margin-bottom: 10px;
 }
 
 .side {
@@ -192,26 +206,19 @@ body{
 }
 
 .side_section {
-    border-radius: 6px;
-    border: 1px solid #dbdbdb;
     height: 60px;
-    margin-bottom: 10px;
+    padding: 0 12px;
 }
 
-.ad_border{
+.ad_border {
     width: 238px;
     height: 88px;
-    border: 1px solid #dbdbdb;
-    border-radius: 6px;
     overflow: hidden;
-    margin-bottom: 10px;
 }
 
 .side_ad {
-    border: 1px solid #dbdbdb;
     border-radius: 6px;
     overflow: hidden;
-    margin-bottom: 10px;
 }
 
 #footer {
@@ -219,8 +226,32 @@ body{
     height: 78px;
     position: relative;
     clear: both;
-    border: 1px solid #dbdbdb;
     background: #f9f9f9;
-    border-radius: 6px;
-    margin: 0 auto;/*居中*/
+    margin: 0 auto;
+    /*居中*/
+}
+
+.options .nav {
+    height: 34px;
+    position: relative;
+}
+
+.options .nav li {
+    width: 172px;
+    height: 33px;
+    border: 1px solid #dbdbdb;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+}
+
+.options .nav .active {
+    width: 172px;
+    height: 34px;
+}
+
+.options .con {
+    width: 348px;
+    border: 1px solid #dbdbdb;
+    border-radius: 0 0 6px 6px;
+    height: 80px;
 }
