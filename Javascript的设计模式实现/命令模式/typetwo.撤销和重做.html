@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<button id="replay">播放录像</button>
+</body>
+<script type="text/javascript">
+	var Ryu = {
+		attack:function(){
+			console.log("攻击");
+		},
+		defense:function(){
+			console.log("防御");
+		},
+		jump:function(){
+			console.log("跳跃");
+		},
+		crouch:function(){
+			console.log("蹲下");
+		}
+	};
+	var makeCommand = function(receiver,state){//创建命令
+		return function(){
+			receiver[state]();
+		}
+	};
+	var commands = {
+		"119":"jump",
+		"115":"crouch",
+		"97":"defense",
+		"100":"attack"
+	};
+	var commandStack = []; //保存命令的堆栈
+	document.onkeypress = function(ev){
+		var keyCode = ev.keyCode, command = makeCommand(Ryu,commands[keyCode]);
+		if (command) {
+			command();//执行命令
+			commandStack.push(command);//保存刚执行过得命令保存进堆栈
+		}
+	};
+	document.getElementById("replay").onclick = function(){//点击播放录像
+		var command;
+		while(command = commandStact.shift()){//从堆栈取出命令并且执行
+			command();
+		}
+	};
+</script>
+</html>
