@@ -47,7 +47,8 @@
 
 	document.write('It works.')
 	document.write(__webpack_require__(1)) // 添加模块
-	__webpack_require__(2) // 载入 style.css
+	document.write(__webpack_require__(2))
+	__webpack_require__(4) // 载入 style.css
 
 
 /***/ },
@@ -60,13 +61,29 @@
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var multiplyBy2 = __webpack_require__(3);
+	var result = multiplyBy2(4);
+	module.exports = "result is " +result;
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	module.exports = function( value ){
+	    return value * 2;
+	}
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(3);
+	var content = __webpack_require__(5);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(5)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -83,21 +100,21 @@
 	}
 
 /***/ },
-/* 3 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(4)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "body { background: yellow; }", ""]);
+	exports.push([module.id, "body { background: red; }", ""]);
 
 	// exports
 
 
 /***/ },
-/* 4 */
+/* 6 */
 /***/ function(module, exports) {
 
 	/*
@@ -153,7 +170,7 @@
 
 
 /***/ },
-/* 5 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
