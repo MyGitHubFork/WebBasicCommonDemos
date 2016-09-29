@@ -1,0 +1,20 @@
+  510  npm install -g cnpm --registry=https://registry.npm.taobao.org
+  511  npm install -g vue-cli
+  512  cnpm -v
+  513  cnpm install -g vue-cli
+  514  vue
+  515  vue =v
+  516  vue -v
+  517  pwd
+  518  ls
+  519  cd WebDevelopStudy/
+  520  LS
+  521  mkdir vuejs入门基础
+  522  ls
+  523  cd vuejs入门基础/
+  524  vue init webpack my-first-vue-project
+  525  ls
+  526  cd my-first-vue-project/
+  527  ls
+  528  cnpm install
+  529  npm run dev
