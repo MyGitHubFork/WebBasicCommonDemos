@@ -7,6 +7,7 @@ ajax相关学习参考韩顺平的视频学习、讲的非常详细。具体源�
 [经典webpack入门](http://www.tuicool.com/articles/ZjemEbJ)</br>
 [Webpack傻瓜式指南（一）](https://zhuanlan.zhihu.com/p/20367175?f3fb8ead20=5ee5bdc2a3f7c3339c3869ca871070e7)</br>
 [Webpack傻瓜式指南系列](https://github.com/vikingmute/webpack-for-fools)</br>
+[Webpack中文指南](http://wiki.jikexueyuan.com/project/webpack-handbook/)</br>
 
 ##iOS原生代码与html5交互
 OC与JS交互Demos里面是这个相关的源码<br/>
