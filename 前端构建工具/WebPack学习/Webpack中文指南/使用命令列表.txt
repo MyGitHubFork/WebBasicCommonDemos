@@ -1,0 +1,44 @@
+  547  cd /Users/huangchengdu/Desktop/github/WebDevelopStudy/WebPack学习/WebPack经典案列 
+  548  ls
+  549  npm install webpack -g
+  550  pwd
+  551  ls
+  552  ls
+  553  npm init
+  554  npm init 
+  555  ls
+  556  npm install webpack --save-dev
+  557  ls
+  558  npm info webpack
+  559  npm install webpack@1.13.2  --save-dev
+  560  ls
+  561  pwd
+  562  ls
+  563  ls
+  564  npm install webpack-dev-server --save-dev
+  565  npm install webpack-dev-server --save-dev
+  566  ls
+  567  ls
+  568  ls
+  569  webpack entry.js bundle.js
+  570  ls
+  571  cat bundle.js 
+  572  ls
+  573  cat package.json 
+  574  webpack entry.js bundle.js
+  575  npm install css-loader style-loader
+  576  webpack entry.js bundle.js --module-bind 'css=style!css'
+  577  npm install
+  578  npm install
+  579  ls
+  580  webpack entry.js bundle.js
+  581  webpack entry.js bundle.js
+  582  webpack entry.js bundle.js
+  583  webpack
+  584  webpack --progress --colors
+  585  webpack --progress --colors --watch
+  586  webpack --progress --colors
+  587  npm install webpack-dev-server -g
+  588  webpack-dev-server --progress --colors
+  589  webpack
+  590  webpack-dev-server --progress --colors
