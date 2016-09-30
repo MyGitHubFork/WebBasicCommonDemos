@@ -7,7 +7,8 @@
         {{item.label}}
       </li>
     </ul>
-    <component-a msgfromfather='you die!'></component-a>
+    <p>child tells me: {{childWords}} + {{childWordstow}}</p>
+    <component-a msgfromfather='you die!'  v-on:child-tell-me-something='listenToMyBoy'></component-a>
   </div>
 </template>
 
@@ -19,7 +20,9 @@
       return {
         title: 'this is a todo list',
         items: Store.fetch(),
-        newItem: ''
+        newItem: '',
+        childWords:'',
+        childWordstow:''
       };
     },
     components:{ComponentA},
@@ -29,6 +32,11 @@
                 Store.save(items);
             },
             deep:true
+        }
+    },
+    events:{
+        'child-tell-me-something-two':function (msg) {
+            this.childWordstow = msg;
         }
     },
     methods: {
@@ -42,6 +50,9 @@
           isFinished: false,
         });
         this.newItem = '';
+      },
+      listenToMyBoy:function(msg){
+          this.childWords = msg;
       }
     }
   }
