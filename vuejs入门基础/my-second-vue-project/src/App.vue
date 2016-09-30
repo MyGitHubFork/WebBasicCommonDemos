@@ -7,21 +7,22 @@
         {{item.label}}
       </li>
     </ul>
+    <component-a msgfromfather='you die!'></component-a>
   </div>
 </template>
 
 <script>
   import Store from './store'
+  import ComponentA from './components/componentA'
   export default {
     data: function () {
       return {
         title: 'this is a todo list',
         items: Store.fetch(),
-        newItem: '',
-        liClass: 'thisisliClass'
-
+        newItem: ''
       };
     },
+    components:{ComponentA},
     watch:{
         items:{
             handler:function(items){

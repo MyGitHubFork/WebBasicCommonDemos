@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h1>{{msgfromfather}}</h1>
+    <button v-on:click="onClickMe">Click!</button>
   </div>
 </template>
 
@@ -8,8 +10,14 @@
 export default {
   data () {
     return {
-      msg: 'Hello Vue!'
+      msg: 'hello from component a!'
     }
+  },
+  props:['msgfromfather'],
+  methods:{
+      onClickMe:function(){
+          console.log(this.msgfromfather);
+      }
   }
 }
 </script>
@@ -20,3 +28,5 @@ h1 {
   color: #42b983;
 }
 </style>
+
+
