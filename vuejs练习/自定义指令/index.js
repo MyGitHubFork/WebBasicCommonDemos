@@ -17,3 +17,8 @@ var demo = new Vue({
 		msg: 'hello!'
 	}
 })
+
+Vue.directive('demotest', function (value) {
+	console.log(value.color) // "white"
+	console.log(value.text) // "hello!"
+})
