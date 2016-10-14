@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>vuejs练习</title>
+</head>
+<body>
+    <div id="repeat-object">
+        <li v-for="value in object">
+            {{$key}}:{{value}}
+        </li>
+        <li v-for="item in items">
+            {{item.title}}
+        </li>
+    </div>
+    <script src='http://cdn.jsdelivr.net/vue/1.0.26/vue.min.js'></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* 必需 */
+.expand-transition {
+	transition: all .3s ease;
+	height: 30px;
+	padding: 10px;
+	background-color: #eee;
+	overflow: hidden;
+}
+
+/* .expand-enter 定义进入的开始状态 */
+/* .expand-leave 定义离开的结束状态 */
+.expand-enter, .expand-leave {
+	height: 0;
+	padding: 0 10px;
+	opacity: 0;
+}
