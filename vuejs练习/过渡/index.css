@@ -1,16 +1,31 @@
-/* 必需 */
-.expand-transition {
-	transition: all .3s ease;
-	height: 30px;
-	padding: 10px;
-	background-color: #eee;
-	overflow: hidden;
+.bounce-transition {
+	display: inline-block; /* 否则 scale 动画不起作用 */
 }
-
-/* .expand-enter 定义进入的开始状态 */
-/* .expand-leave 定义离开的结束状态 */
-.expand-enter, .expand-leave {
-	height: 0;
-	padding: 0 10px;
-	opacity: 0;
+.bounce-enter {
+	animation: bounce-in .5s;
+}
+.bounce-leave {
+	animation: bounce-out .5s;
+}
+@keyframes bounce-in {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes bounce-out {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(0);
+	}
 }

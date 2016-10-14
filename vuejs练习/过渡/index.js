@@ -2,16 +2,16 @@ new Vue({
 	el:"#repeat-object",
 	data:{
 		show: true,
-		transitionName: 'fade'
+		transitionName: 'bounce'
 	},
 	methods:{
 		testShow:function (event) {
-			this.show = !this.show;
+			this.show = this.show;
 		}
 	}
 })
 
-Vue.transition('expand', {
+Vue.transition('bounce', {
 
 	beforeEnter: function (el) {
 		el.textContent = 'beforeEnter'
