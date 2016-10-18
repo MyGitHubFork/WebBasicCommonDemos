@@ -2,15 +2,15 @@ new Vue({
 	el:"#repeat-object",
 	data:{
 		show: true,
-		transitionName: 'bounce'
+		//transitionName: 'bounce'//可选
 	},
 	methods:{
 		testShow:function (event) {
-			this.show = this.show;
+			this.show = !this.show;
 		}
 	}
 })
-
+// 这里的名字必须和css和html的名字一致才能都起作用。如果css和js中只有一个名字相同，则名字相同的那个起作用。
 Vue.transition('bounce', {
 
 	beforeEnter: function (el) {
