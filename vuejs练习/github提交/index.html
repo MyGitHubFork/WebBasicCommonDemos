@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>vuejs练习</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div id="demo">
+    <h1>Latest Vue.js Commits</h1>
+    <template v-for="branch in branches">
+        <input type="radio" :id="branch" :value="branch" v-model="currentBranch">
+        <label :for="branch">{{branch}}</label>
+    </template>
+    <p>vuejs/vue@{{currentBranch}}</p>
+    <ul>
+        <li v-for="record in commits">
+            <a :href="record.html_url" target="_blank" class="commit">{{record.sha.slice(0,7)}}</a>
+            -<span class="message">{{record.commit.message | truncate}}</span></br>
+            by <span class="author">{{record.commit.author.name}}</span>
+            at <span class="date">{{record.commit.author.date | formatDate}}</span>
+        </li>
+    </ul>
+</div>
+    <script src='../vue.min.js'></script>
+    <script src="index.js"></script>
+</body>
+</html>
