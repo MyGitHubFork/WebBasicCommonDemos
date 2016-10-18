@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>vuejs练习</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li class="user" v-for="user in users" transition>
+                <span>{{user.name}} - {{user.email}}</span>
+                <button v-on:click="removeUser(user)">X</button>
+            </li>
+        </ul>
+        <form id="form" v-on:submit.prevent="addUser">
+            <input v-model="newUser.name">
+            <input v-model="newUser.email">
+            <input type="submit" value="添加用户">
+        </form>
+        <ul class="errors">
+            <li v-show="!validation.name">Name cannot be empty.</li>
+            <li v-show="!validation.email">Please provide a valid email address.</li>
+        </ul>
+    </div>
+    <script src="firebase.js"></script>
+    <script src='../vue.min.js'></script>
+    <script src="index.js"></script>
+</body>
+</html>
