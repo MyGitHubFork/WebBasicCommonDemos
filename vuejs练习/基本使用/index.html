@@ -3,16 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>vuejs练习</title>
-
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 <div id="editor">
 	<textarea v-model="input" debounce="300"></textarea>
 	<div v-html="input | marked"></div>
 </div>
-
-<script src='http://cdn.jsdelivr.net/vue/1.0.26/vue.min.js'></script>
+<script src='../vue.min.js'></script>
 <script src="index.js"></script>
-<link type="text/css" href="index.css">
 </body>
 </html>

@@ -4,6 +4,6 @@ new Vue({
 		input: '# hello'
 	},
 	filters: {
-		marked: marked
+		// marked: marked
 	}
 })
