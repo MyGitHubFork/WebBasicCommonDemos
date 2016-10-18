@@ -13,7 +13,7 @@ Vue.component('demo-grid',{
 		var sortOrders = {};
 		this.columns.forEach(function (key) {
 			sortOrders[key] = 1;
-		});//sortOrders有两个属性name和power。默认都是将序
+		});//sortOrders有两个属性name和power。默认值都是1，也就是默认都是未选中状态的。
 		return {
 			sortKey:'',
 			sortOrders:sortOrders
@@ -23,7 +23,7 @@ Vue.component('demo-grid',{
 		//修改两个排列属性的值从而更改排序方式
 		sortBy:function (key) {
 			this.sortKey = key;
-			this.sortOrders[key] = this.sortOrders[key] * -1;//改变排序方式
+			this.sortOrders[key] = this.sortOrders[key] * -1;//根据不同的值，得到不同的class，改变头部的颜色
 		}
 	}
 })
