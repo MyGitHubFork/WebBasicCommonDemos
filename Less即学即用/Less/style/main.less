@@ -1,5 +1,118 @@
 @charset "UTF-8";
 
-body{
-  background-color: #00d4b4;
+body {
+	background-color: #00d4b4;
+}
+
+//变量一定要用@开头，变量名后面一个：值
+@test_width: 300px;
+.box {
+	width: @test_width;
+	height: @test_width;
+	background-color: yellow;
+
+	.border;
+}
+
+//============================混合==================================
+.border {
+	border: solid 5px pink;
+}
+
+//混合可带参数
+.border_02(@border_width) {
+	border: solid yellow @border_width;
+}
+
+.test_hunhe {
+	.border_02(30px);
+}
+
+//混合-默认带值
+.border_03(@border_width:10px) {
+	border: solid green @border_width;
+}
+
+.test_hunhe_03 {
+	.border_03(20px);
+}
+
+.border_radius(@raidus:5px) {
+	-webkit-border-radius: @raidus;
+	-moz-border-radius: @raidus;
+	border-radius: @raidus;
+}
+
+.radius_test {
+	width: 100px;
+	height: 40px;
+	background-color: green;
+
+	.border_radius(10px);
+}
+
+//================匹配模式======================
+//.sanjiao{
+//	width: 0;
+//	height: 0;
+//	overflow: hidden;
+//	border-width: 10px;
+//	border-color: transparent transparent red transparent;
+//	border-style: dashed dashed solid dashed;
+//}
+.triangle(top,@w:5px,@c:#ccc) {
+	border-width: @w;
+	border-color: transparent transparent @c transparent;
+	border-style: dashed dashed solid dashed;
+}
+
+.triangle(bottow,@w:5px,@c:#ccc) {
+	border-width: @w;
+	border-color: @c transparent transparent transparent;
+	border-style: solid dashed dashed dashed;
+}
+
+.triangle(left,@w:5px,@c:#ccc) {
+	border-width: @w;
+	border-color: transparent @c transparent transparent;
+	border-style: dashed solid dashed dashed;
+}
+
+.triangle(right,@w:5px,@c:#ccc) {
+	border-width: @w;
+	border-color: transparent transparent transparent @c;
+	border-style: dashed dashed dashed solid;
+}
+//不管你选择哪个，这里面的东西你必须待上。
+.triangle(@_,@w:5px,@c:#ccc) {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.sanjiao {
+	.triangle(top,100px)
+}
+//匹配模式-定位
+.pos(r){
+	position: relative;
+}
+.pos(a){
+	position: absolute;
+}
+.pos(f){
+	position: fixed;
+}
+.pipe{
+	width:200px;
+	height:200px;
+	background-color: green;
+	.pos(r);
+}
+
+//==========================运算==============================
+@test_01:300px;
+.box_02{
+	width:(@test_01 + 20) * 5;
+	color: #ccc - 10;
 }
