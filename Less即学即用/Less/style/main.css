@@ -1,7 +1,4 @@
 @charset "UTF-8";
-body {
-  background-color: #00d4b4;
-}
 .box {
   width: 300px;
   height: 300px;
@@ -42,4 +39,33 @@ body {
 .box_02 {
   width: 1600px;
   color: #c2c2c2;
+}
+.list {
+  width: 600px;
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+}
+.list li {
+  height: 30px;
+  line-height: 30px;
+  background-color: pink;
+  margin-bottow: 5px;
+  padding: 0 10px;
+}
+.list a {
+  float: left;
+}
+.list a:hover {
+  color: red;
+}
+.list span {
+  float: right;
+}
+.test_arguments {
+  border: 40px #ff0000 solid;
+}
+.test_03 {
+  width: calc(270px);
+  height: calc(300px-30px);
 }

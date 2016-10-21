@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-	background-color: #00d4b4;
+	//background-color: #00d4b4;
 }
 
 //变量一定要用@开头，变量名后面一个：值
@@ -116,3 +116,50 @@ body {
 	width:(@test_01 + 20) * 5;
 	color: #ccc - 10;
 }
+
+
+//==========================嵌套规则==============================
+.list{
+	width:600px;
+	margin:30px auto;
+	padding:0;
+	list-style:none;
+
+	li{
+		height:30px;
+		line-height:30px;
+		background-color:pink;
+		margin-bottow:5px;
+		padding: 0 10px;
+	}
+	a{
+		float:left;
+		//&代表上一层
+		&:hover{
+			color:red;
+		}
+	}
+	span{
+		float:right;
+	}
+}
+
+//=======================arguments==================================
+.border_arg(@w:30px, @c:red, @xx:solid){
+	border:@arguments;
+}
+.test_arguments{
+	.border_arg(40px);
+}
+
+.test_03{
+	width:calc(300px-30px);
+	height:~'calc(300px-30px)';
+}
+
+
+
+
+
+
+
