@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css练习之对齐</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.center{
+			margin: auto;
+			width: 70%;
+			background-color: #b0e0e6;
+		}
+
+		.container{
+			position: relative;
+			width: 100%;
+			background-color: #b0e0d4;
+		}
+		.right{
+			position: absolute;
+			right: 0px;
+			width: 300px;
+			background-color: #b0e0e6;
+		}
+		.floatright{
+			float: right;
+			width: 300px;
+			background-color: #b0e0e6;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<p>这是一个段落、居中对齐、通过margin：auto实现，并且指定宽度是父容器的百分之七十</p>
+		<p><b>注释：</b>除非已经声明了 !DOCTYPE，否则使用 margin:auto 在 IE8 以及更早的版本中是无效的。</p>
+	</div>
+
+
+	<div class="container">
+		<div class="right">
+			<p><b>注释：</b>当使用 position 属性进行对齐时，请始终包含 !DOCTYPE 声明！如果省略，则会在 IE 浏览器中产生奇怪的结果。</p>
+		</div>
+	</div>
+	<div class="floatright">
+		<p>这是一个段落，靠右对齐。是通过flaot:right实现</p>
+	</div>
+</body>
+</html>
