@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>position布局练习</title>
+	<style type="text/css">
+		h2.pos_left{
+			position: relative;
+			left: -20px;
+		}
+		h2.pos_right{
+			position: relative;
+			left: 50px;
+		}
+
+		h2.pos_abs{
+			position: absolute;
+			left: 100px;
+			top: 800px;
+		}
+
+		p.one
+		{
+			position:fixed;
+			left:5px;
+			top:355px;
+		}
+		p.two
+		{
+			position:fixed;
+			top:355px;
+			right:5px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<h2>relative这是正常位置的标题,相对定位会按照元素的原始位置对该元素进行移动。</h2>
+	<h2 class="pos_left">relative这个标题相对于其他正常位置的偏移</h2>
+	<h2 class="pos_right">relative这个标题相对于其他正常位置的偏移</h2>
+	<hr>
+</div>
+<div>
+	<h2 class="pos_abs">这是带有绝对定位的标题</h2>
+	<p>通过绝对定位，元素可以放置到页面上的任何位置。下面的标题距离页面左侧 100px，距离页面顶部 150px。</p>
+	<hr>
+</div>
+<div>
+	<p class="one">一些文本。</p>
+	<p class="two">更多的文本。</p>
+</div>
+</body>
+</html>
