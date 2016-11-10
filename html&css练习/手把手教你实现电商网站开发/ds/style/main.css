@@ -93,6 +93,7 @@
 }
 .shopClass{
 	width: 190px;
+	position: relative;
 }
 .shopClass h3{
 	line-height: 35px;
@@ -125,9 +126,38 @@
 	background-color: #4593FD;
 }
 
-
-
-
+/*商品弹出列表*/
+.shopClass_show{
+	background-color: #4593FD;
+	position: absolute;
+	left: 0;
+	top: 35px;
+	width: 100%;
+}
+.shopClass_item{
+	padding: 14px 10px;
+	border-bottom: #3487F2 solid 1px;
+	border-top: #5AA1FE solid 1px;
+}
+.shopClass_item dt{
+	height: 22px;
+	background: url(../images/icon/shop_sj.jpg) right center no-repeat;
+}
+.shopClass_item .b{
+	font:14px/1 "Microsoft YaHei", "微软雅黑";
+}
+.shopClass_item a{
+	color: #FFFFFF;
+}
+.shopClass_item .aLink{
+	width: 48px;
+	height: 20px;
+	background: url(../images/icon/aLink_bg.png) left center no-repeat;
+	display: inline-block;
+	text-align: center;
+	line-height: 20px;
+	text-decoration: underline;
+}
 
 
 
