@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>用css3写导航目录</title>
+    <script type="text/javascript">
+    </script>
+    <style type="text/css">
+    	.admin-sidebar-list>li input {
+    		position: absolute;
+    		width: 100%;
+    		height: 48px;
+    		z-index: 10;
+    		opacity: 0;
+    	}
+    	.admin-sidebar-list>li ul{
+    		margin: 0;
+    		list-style-type: none;
+    		padding-left: 20px;
+    		display: none;
+    	}
+    	.admin-sidebar-list>li input:checked ~ul{
+    		display: block;
+    		-webkit-animation-duration:1s;
+    	}
+    	.admin-sidebar-list>li ul li:hover{
+    		background-color: #eee;
+    	}
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="admin-sidebar-list">
+            <li>
+                <input type="checkbox" checked="checked">
+                <a>目录一</a>
+                <ul>
+                    <li><a href="#">子目录一</a></li>
+                    <li><a href="#">子目录二</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox">
+                <a>目录二</a>
+                <ul>
+                    <li><a href="#">子目录一</a></li>
+                    <li><a href="#">子目录二</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+
+<!-- 参考地址：
+http://mp.weixin.qq.com/s?__biz=MjM5MDk5MzE2Mw%3D%3D&mid=2527293900&idx=1&sn=911c1111d4c3dd588ac388854265b946&mpshare=1&scene=1&srcid=11110a62QEqLreuWPco22bQg
+ -->
+
