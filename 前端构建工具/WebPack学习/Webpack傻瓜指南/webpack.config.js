@@ -2,7 +2,7 @@
  * @Author: huangchengdu
  * @Date:   2016-11-15 15:52:36
  * @Last Modified by:   huangchengdu
- * @Last Modified time: 2016-11-15 16:24:29
+ * @Last Modified time: 2016-11-15 16:30:18
  */
 
 
@@ -34,8 +34,8 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.css$/,
-            loaders: ['style', 'css'],
+            test: /\.scss$/,
+            loaders: ['style', 'css', 'sass'],
             include: APP_PATH
         }]
     },
