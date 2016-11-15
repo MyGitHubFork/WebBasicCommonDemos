@@ -1,0 +1,41 @@
+参考资料地址：
+https://zhuanlan.zhihu.com/p/20367175
+命令列表：
+501  cd /Users/huangchengdu/Desktop/github/WebBasicCommonDemos/前端构建工具/WebPack学习/Webpack傻瓜指南
+  502  pwd
+  503  pwd
+  504  cnpm init
+  505  cnpm install
+  506  pwd
+  507  cnpm install html-webpack-plugin --save-dev
+  508  cnpm install html-webpack-plugin --save-dev
+  509  cnpm install html-webpack-plugin --save-dev
+  510  webpack
+  511  pwd
+  512  ls
+  513  cnpm install
+  514  webpack
+  515  webpack
+  516  cnpm install
+  517  webpack
+  518  cnpm install
+  519  webpack
+  520  npm install webpack-dev-server --save-dev
+  521  cnpm install webpack-dev-server --save-dev
+  522  cnpm install webpack-dev-server --save-dev
+  523  npm start
+  524  cnpm install css-loader style-loader --save-dev
+  525  npm start
+  526  cnpm install
+  527  npm start
+  528  cnpm install sass-loader --save-dev
+  529  npm start
+  530  npm start
+  531  cnpm install url-loader --save-dev
+  532  npm start
+  533  cnpm install jquery moment --save-dev
+  534  npm start
+  535  cnpm install babel-loader babel-preset-es2015 --save-dev
+  536  npm start
+  537  npm start
+
