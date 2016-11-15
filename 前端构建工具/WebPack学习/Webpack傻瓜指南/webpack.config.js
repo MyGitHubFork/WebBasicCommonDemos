@@ -2,7 +2,7 @@
  * @Author: huangchengdu
  * @Date:   2016-11-15 15:52:36
  * @Last Modified by:   huangchengdu
- * @Last Modified time: 2016-11-15 16:30:18
+ * @Last Modified time: 2016-11-15 16:40:35
  */
 
 
@@ -37,6 +37,9 @@ module.exports = {
             test: /\.scss$/,
             loaders: ['style', 'css', 'sass'],
             include: APP_PATH
+        }, {
+            test: /\.(png|jpg)$/,
+            loader: 'url?limit=40000'
         }]
     },
 };
