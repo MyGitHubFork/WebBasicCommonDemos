@@ -2,7 +2,7 @@
  * @Author: huangchengdu
  * @Date:   2016-11-15 15:52:36
  * @Last Modified by:   huangchengdu
- * @Last Modified time: 2016-11-15 15:56:23
+ * @Last Modified time: 2016-11-15 16:24:29
  */
 
 
@@ -25,5 +25,18 @@ module.exports = {
         new HtmlwebpackPlugin({
             title: 'Hello World app'
         })
-    ]
+    ],
+    devServer: {
+        historyApiFallback: true,
+        hot: true,
+        inline: true,
+        progress: true,
+    },
+    module: {
+        loaders: [{
+            test: /\.css$/,
+            loaders: ['style', 'css'],
+            include: APP_PATH
+        }]
+    },
 };
