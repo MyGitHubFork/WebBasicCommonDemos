@@ -2,7 +2,7 @@
  * @Author: huangchengdu
  * @Date:   2016-11-15 15:52:36
  * @Last Modified by:   huangchengdu
- * @Last Modified time: 2016-11-15 16:40:35
+ * @Last Modified time: 2016-11-15 16:48:19
  */
 
 
@@ -40,6 +40,13 @@ module.exports = {
         }, {
             test: /\.(png|jpg)$/,
             loader: 'url?limit=40000'
+        }, {
+            test: /\.jsx?$/,
+            loader: 'babel',
+            include: APP_PATH,
+            query: {
+                presets: ['es2015']
+            }
         }]
     },
 };
