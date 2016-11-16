@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOM相关操作</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function clickButton(){
+			var wroxWin = window.open("http://www.baidu.com","name","height=400,width=400,top=10,left=10,resizable=yes");
+
+		}
+		function clickButton2(){
+			//location.href = "https://mail.qq.com/cgi-bin/frame_html?sid=A9Qm4HxhCnZad2A4&r=9fb55a1813ce7b55e711e0519b73f2ff";
+			var argus = getQueryStringArgs();
+			console.log(argus);
+		}
+		function clickButton3(){
+			alert(hasPlugin("Flash"));
+		}
+		function getQueryStringArgs(){
+			var qs = (location.search.length > 0 ? location.search.substring(1) : "");
+			var argus = {};
+			var items = qs.length ? qs.split("&"):[];
+			var item = null,name=null,value=null,i=0,len = items.length;
+			for (var i = 0; i < len; i++) {
+				item = items[i].split("=");
+				name  = decodeURIComponent(item[0]);
+				value  = decodeURIComponent(item[1]);
+				if (name.length) {
+					argus[name] = value;
+				}
+			}
+			return argus;
+		}
+		function hasPlugin(name){
+			name = name.toLowerCase();
+			for(var i=0;i<navigator.plugins.length;i++) {
+				if (navigator.plugins[i].name.toLowerCase().indexOf(name) > -1) {
+					return true;
+				}
+			}
+			return false;
+		}
+	</script>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<button type="button" onclick="clickButton()" value="其他页面" >其他页面</button>
+	<button type="button" onclick="clickButton2()">获取location信息</button>
+	<button type="button" onclick="clickButton3()">检测插件</button>
+</body>
+</html>

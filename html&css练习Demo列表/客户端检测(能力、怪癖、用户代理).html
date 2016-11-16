@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>客户端检测(能力、怪癖、用户代理)</title>
+	<script type="text/javascript">
+		
+		function clickButton(argument) {
+			//确定浏览器是否支持Netscape风格的插件
+			var hasNSPlugins = !!(navigator.plugins && navigator.plugins.length);
+			//确定浏览器是否具有DOM1级规定的能力
+			var hasDOM1 = !!(document.getElementById && document.createElement && document.getElementsByTagName);
+			alert("hasNSPlugins:" +hasNSPlugins + " hasDOM1:" + hasDOM1);
+		}
+	</script>
+</head>
+<body>
+	<button type="button" onclick="clickButton()">插件风格和dom1支持检测</button>
+</body>
+</html>
