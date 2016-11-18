@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS3练习</title>
+	<style type="text/css">
+		#radius{
+			text-align: center;
+			border: 2px solid #a1a1a1;
+			padding: 10px 40px;
+			background: #dddddd;
+			width: 350px;
+			border-radius: 25px;
+			-moz-border-radius: 25px;/*老的firfox*/
+			box-shadow: 10px 10px 5px #888888;
+		}
+		#round{
+			-webkit-border-image: url('http://www.w3school.com.cn/i/border.png') 30 30 round;
+			border-image: url('http://www.w3school.com.cn/i/border.png') 30 30 round;
+		}
+		#stretch{
+			-webkit-border-image: url('http://www.w3school.com.cn/i/border.png') 30 30 stretch;
+			border-image: url('http://www.w3school.com.cn/i/border.png') 30 30 stretch;
+		}
+		.backImage{
+			border:1px solid black;
+			padding: 35px;
+			background-image: url(http://www.w3school.com.cn/i/bg_flower.gif);
+			background-repeat: no-repeat;
+			background-position: left;
+		}
+		#div1{
+			background-origin: border-box;
+
+		}
+		#div2{
+			background-origin: content-box;
+		}
+		@font-face{
+			font-family: myFirstFont;
+			src:url('./Sansation_Light.ttf');
+		}
+		@font-face{
+			font-family: myFirstFont;
+			src:url('./Sansation_Bold.ttf');
+			font-weight: bold;
+		}
+		#myfont{
+			font-family: myFirstFont;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="radius">border-radius属性允许您向元素添加圆角</div>
+	</br>
+
+	<div id="round">在这里，图片铺满整个边框</div>
+	<div id="stretch">在这里，图片呗拉伸以填充该区域</div>
+	<p>这是我们使用的图片:</p>
+	<img src="http://www.w3school.com.cn/i/border.png">
+	</br>
+	<p>background-origin:border-box:</p>
+
+	<div id="div1" class="backImage">
+	这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+	</div>
+	<p>background-origin:content-box:</p>
+	<div id="div2" class="backImage">
+	这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+	</div>
+
+	</br>
+	<div id="myfont">
+	With CSS3, websites can <b>finally</b> use fonts other than the pre-selected "web-safe" fonts.
+	</div>
+	<div>
+	With CSS3, websites can <b>finally</b> use fonts other than the pre-selected "web-safe" fonts.
+	</div>
+</body>
+</html>

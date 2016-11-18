@@ -11,7 +11,8 @@
 [prototype的本质](http://www.qdfuns.com/notes/17398/35b250e9b392675c44f4f0cd833b72c8.html)</br>
 [史上最全的CSS hack方式一览](http://blog.csdn.net/freshlover/article/details/12132801)</br>
 [浏览器~加载，解析，渲染](http://www.jianshu.com/p/e141d1543143)</br>
-
+[前端解决跨域问题的8种方案](http://web.jobbole.com/88524/)</br>
+[JS中几种实用的跨域方法原理详解](http://web.jobbole.com/88525/?utm_source=blog.jobbole.com&utm_medium=relatedPosts)</br>
 ##webpack打包
 [经典webpack入门](http://www.tuicool.com/articles/ZjemEbJ)</br>
 [Webpack中文指南](http://wiki.jikexueyuan.com/project/webpack-handbook/)</br>
