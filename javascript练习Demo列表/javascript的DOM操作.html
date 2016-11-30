@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<title>DOM操作</title>
+        <meta charset="utf-8">
+       
+    </head>
+    <body>
+    	<script type="text/javascript">
+    		var html = document.documentElement;
+    		console.log( "html === document.childNodes[0] ：" + (html == document.childNodes[0]));
+    		console.log("html === document.firstChild:" + (html == document.firstChild));
+    		var body = document.getElementsByTagName('body');
+    		console.log("body === document.body:" + (body == document.body));
+    	</script>
+    </body>
+</html>
