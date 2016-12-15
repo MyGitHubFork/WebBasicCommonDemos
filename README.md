@@ -11,6 +11,8 @@
 [prototype的本质](http://www.qdfuns.com/notes/17398/35b250e9b392675c44f4f0cd833b72c8.html)</br>
 [史上最全的CSS hack方式一览](http://blog.csdn.net/freshlover/article/details/12132801)</br>
 [浏览器~加载，解析，渲染](http://www.jianshu.com/p/e141d1543143)</br>
+[cookie从哪来到哪去](https://gold.xitu.io/post/584e1f5361ff4b006cd15698)</br>
+[一步一步教你HTTPS抓包](https://gold.xitu.io/post/584b711d8e450a006c586ca6)</br>
 [前端解决跨域问题的8种方案](http://web.jobbole.com/88524/)</br>
 [JS中几种实用的跨域方法原理详解](http://web.jobbole.com/88525/?utm_source=blog.jobbole.com&utm_medium=relatedPosts)</br>
 [JavaScript 知识点整理](https://zhuanlan.zhihu.com/p/23357404)</br>
