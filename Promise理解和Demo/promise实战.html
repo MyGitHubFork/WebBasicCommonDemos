@@ -2,10 +2,62 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <style type="javascript/text">
-        	
-        </style>
-        <style type="text/css"></style>
+        <script type="text/javascript">
+        	function onReadyPromise() {
+        		return new Promise(function(resolve,reject) {
+        			var readyState = document.readyState;
+        			if (readyState === 'interactive' || readyState === 'complete') {
+        				resolve();
+        			}else{
+        				window.addEventListener('DOMContentLoaded',resolve);
+        			}
+        		});
+        	}
+
+        	onReadyPromise().then(function () {
+        		console.log('DOM fully loaded and parsed');
+        	});
+        	//因为上面是异步调用，所以下面一行最先显示。由于Promise保证了每次调用都是以异步方式进行的,所以我们在实际编码中不需要调 用 setTimeout 来自己实现异步调用。
+        	console.log("======Starting==========");
+
+        	//==========================================================================
+        	function taskA() {
+        		console.log('Task A');
+        		throw new Error('throw Error @Task A');
+        	}
+        	function taskB() {
+        		console.log('TaskB');
+        	}
+        	function onRejected(error) {
+        		console.log('Catch Error: A or B',error);
+        	}
+        	function finalTask() {
+        		console.log('Final Task');
+        	}
+        	var promise = Promise.resolve();
+        	promise.then(taskA).then(taskB).catch(onRejected).then(finalTask);
+        	//==========================================================================
+        	function doubleUp(value) {
+        		return value * 2;
+        	}
+        	function increment(value) {
+        		return value  + 1;
+        	}
+        	function output(value) {
+        		console.log(value);
+        	}
+        	var promise = Promise.resolve(1);
+        	promise.then(increment).then(doubleUp).then(output).catch(function (error) {
+        		console.error(error);
+        	});
+        	//=========================================================================
+        	var promise = Promise.reject(new Error('message'));
+        	promise['catch'](function (error) {
+        		console.log("测试：" + error);
+        	});
+        	//每次调用then都会返回一个新创建的promise对象
+
+        </script>
     </head>
     <body>
     </body>

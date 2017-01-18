@@ -18,11 +18,13 @@
 [JS中几种实用的跨域方法原理详解](http://web.jobbole.com/88525/?utm_source=blog.jobbole.com&utm_medium=relatedPosts)</br>
 [JavaScript 知识点整理](https://zhuanlan.zhihu.com/p/23357404)</br>
 [前端开发面试题(综合性很强)](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions/Questions-and-Answers)</br>
+[前端面试记](https://gold.xitu.io/entry/587df48f61ff4b00650d1dcc/view)</br>
 ##webpack打包
 [经典webpack入门](http://www.tuicool.com/articles/ZjemEbJ)</br>
 [Webpack中文指南](http://wiki.jikexueyuan.com/project/webpack-handbook/)</br>
 [Webpack傻瓜式指南（一](https://zhuanlan.zhihu.com/p/20367175)</br>
 [Webpack傻瓜指南（二）开发和部署技巧](https://zhuanlan.zhihu.com/p/20397902)</br>
+[webpack优秀中文文章集合](https://github.com/webpack-china/awesome-webpack-cn)</br>
 [前端构建工具gulp入门教程](https://segmentfault.com/a/1190000000372547)</br>
 ##iOS原生代码与html5交互
 [WKWebView与Js实战(OC版)](http://www.henishuo.com/wkwebview-js-h5-oc/?utm_source=tuicool&utm_medium=referral)<br/>
