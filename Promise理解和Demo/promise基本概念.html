@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+        	function getURL(url) {
+        		return new Promise(function (resolve,reject) {
+        			var req = new XMLHttpRequest();
+        			req.open('GET',url,true);
+        			req.onload = function() {
+        				if (req.status === 200) {
+        					resolve(req.responseText);
+        				}else{
+        					reject(new Error(req.statusText));
+        				}
+        			};
+        			req.onerror = function () {
+        				reject(new Error(req.statusText));
+        			};
+        			req.send();
+        		});
+        	}
+
+        	var url = "http://httpbin.org/get";
+        	getURL(url).then(function onFulfilled(value) {
+        		console.log(value);
+        	}).catch(function onRejected(error) {
+        		console.log(error);
+        	});
+
+        	url = "http://httpbin.org/status/500";
+        	getURL(url).then(function onFulfilled(value) {
+        		console.log("success");
+        	}).catch(function onRejected(error) {
+        		console.error(error);
+        	});
+
+        	var onFulfilled = function(value) {
+        		console.log(value);
+        	};
+        	var onRejected = function(error) {
+        		console.log(error);
+        	};
+        	getURL(url).then(onFulfilled,onRejected);
+
+
+        	
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
