@@ -1,4 +1,6 @@
 ##各种原理性的、web开发关键点总结
+[Ajax-hook 原理解析(拦截和处理ajax请求和返回)](http://www.jianshu.com/p/7337ac624b8e)</br>
+[ajax上传技术 大文件/超大文件前端切割上传，后端进行重组](http://www.cnblogs.com/GerryOfZhong/p/6295211.html)</br>
 [https://github.com/huang303513/WebKeyPointExploration](https://github.com/huang303513/WebKeyPointExploration)</br>
 ##各种基础原理和框架使用等
 [JavaScript中创建对象的7种模式](https://zhuanlan.zhihu.com/p/23226652)</br>
