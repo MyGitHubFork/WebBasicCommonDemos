@@ -1,0 +1,46 @@
+/*
+* @Author: huangchengdu
+* @Date:   2017-01-19 10:19:57
+* @Last Modified by:   huangchengdu
+* @Last Modified time: 2017-01-19 11:44:48
+*/
+
+.highlight-box{
+	width: 300px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+}
+.highlight-box img{
+	width: 100%;
+	height: 100%;
+}
+
+.highlight-box:before{
+	display: block;
+	top: -200%;
+	left: -100%;
+	width: 50%;
+	height: 300%;
+	-webkit-transform:rotate(45deg);
+	transform: rotate(45deg);
+	background: -webkit-linear-gradient(left, rgba(255,255,255, 0.05) 20%,rgba(255,255,255,0.6) 65%, rgba(255,255,255,0.05) 100%);
+	background: linear-gradient(left, rgba(255,255,255, 0.05) 20%,rgba(255,255,255,0.6) 65%, rgba(255,255,255,0.05) 100%);
+	content: '';
+	z-index: 2;
+	position: absolute;
+}
+
+.highlight-box:hover:before{
+	animation: crossed 0.5s linear;
+}
+@keyframes crossed{
+	0% {
+		top: -200%;
+		left: -100%;
+	}
+	100% {
+		top: -50px;
+		left: 100%;
+	}
+}
