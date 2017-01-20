@@ -5,7 +5,7 @@ var exec = function (cmd) {
   return require('child_process')
     .execSync(cmd).toString().trim()
 }
-
+//node和npm的版本确认。
 var versionRequirements = [
   {
     name: 'node',
