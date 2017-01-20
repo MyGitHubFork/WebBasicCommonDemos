@@ -1,4 +1,5 @@
 ##各种原理性的、web开发关键点总结
+[你真的懂ajax吗？](https://gold.xitu.io/post/587f8dbd570c3522011c0f59)</br>
 [Ajax-hook 原理解析(拦截和处理ajax请求和返回)](http://www.jianshu.com/p/7337ac624b8e)</br>
 [ajax上传技术 大文件/超大文件前端切割上传，后端进行重组](http://www.cnblogs.com/GerryOfZhong/p/6295211.html)</br>
 [https://github.com/huang303513/WebKeyPointExploration](https://github.com/huang303513/WebKeyPointExploration)</br>
@@ -31,6 +32,7 @@
 ##iOS原生代码与html5交互
 [WKWebView与Js实战(OC版)](http://www.henishuo.com/wkwebview-js-h5-oc/?utm_source=tuicool&utm_medium=referral)<br/>
 [WKWebView API精讲(OC)](http://www.henishuo.com/wkwebview-objc/?utm_source=tuicool&utm_medium=referral)<br/>
+[WKWebView那些坑](http://mp.weixin.qq.com/s?__biz=MzA3NTYzODYzMg==&mid=2653578513&idx=1&sn=961bf5394eecde40a43060550b81b0bb&chksm=84b3b716b3c43e00ee39de8cf12ff3f8d475096ffaa05de9c00ff65df62cd73aa1cff606057d&mpshare=1&scene=23&srcid=0119VtvRXXpX8zD7Hon2AcE0#rd)</br>
 
 
 
