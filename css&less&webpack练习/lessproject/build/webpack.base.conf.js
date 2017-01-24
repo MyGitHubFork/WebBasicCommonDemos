@@ -1,4 +1,4 @@
-// 使用 NodeJS 自带的文件路径插件
+ // 使用 NodeJS 自带的文件路径插件
 var path = require('path')
 // 引入 config/index.js
 var config = require('../config')
