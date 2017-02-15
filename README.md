@@ -20,8 +20,7 @@
 [前端解决跨域问题的8种方案](http://web.jobbole.com/88524/)</br>
 [JS中几种实用的跨域方法原理详解](http://web.jobbole.com/88525/?utm_source=blog.jobbole.com&utm_medium=relatedPosts)</br>
 [JavaScript 知识点整理](https://zhuanlan.zhihu.com/p/23357404)</br>
-[前端开发面试题(综合性很强)](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions/Questions-and-Answers)</br>
-[前端面试记](https://gold.xitu.io/entry/587df48f61ff4b00650d1dcc/view)</br>
+
 ##webpack打包
 [经典webpack入门](http://www.tuicool.com/articles/ZjemEbJ)</br>
 [Webpack中文指南](http://wiki.jikexueyuan.com/project/webpack-handbook/)</br>
