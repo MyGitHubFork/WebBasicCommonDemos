@@ -1,0 +1,12 @@
+.DS_Store
+*.swp
+*.swo
+build
+xcuserdata
+dsym/
+Podfile.lock
+Pods/
+*.xcworkspace
+*.bak
+Ticket/assets/*.js
+Ticket/assets/url.txt
