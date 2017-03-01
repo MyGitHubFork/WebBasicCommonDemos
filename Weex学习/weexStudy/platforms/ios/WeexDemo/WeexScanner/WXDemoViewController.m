@@ -58,34 +58,34 @@
     [self render];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    if ([self canBecomeFirstResponder])
-    {
-        [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
-        [self becomeFirstResponder];
-    }
-    [self updateInstanceState:WeexInstanceAppear];
-}
+//- (void)viewDidAppear:(BOOL)animated
+//{
+//    [super viewDidAppear:animated];
+//    if ([self canBecomeFirstResponder])
+//    {
+//        [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
+//        [self becomeFirstResponder];
+//    }
+//    [self updateInstanceState:WeexInstanceAppear];
+//}
+//
+//- (void)viewDidDisappear:(BOOL)animated
+//{
+//    [super viewDidDisappear:animated];
+//    [self updateInstanceState:WeexInstanceDisappear];
+//}
+//
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    //self.navigationController.navigationBarHidden = YES;
+//}
 
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-    [self updateInstanceState:WeexInstanceDisappear];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    //self.navigationController.navigationBarHidden = YES;
-}
-
-//TODO get height
-- (void)viewDidLayoutSubviews
-{
-    _weexHeight = self.view.frame.size.height;
-}
+////TODO get height
+//- (void)viewDidLayoutSubviews
+//{
+//    _weexHeight = self.view.frame.size.height;
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -131,7 +131,7 @@
     
     _instance.renderFinish = ^(UIView *view) {
          WXLogDebug(@"%@", @"Render Finish...");
-        [weakSelf updateInstanceState:WeexInstanceAppear];
+        //[weakSelf updateInstanceState:WeexInstanceAppear];
     };
     
     _instance.updateFinish = ^(UIView *view) {
@@ -143,23 +143,23 @@
     }
     NSURL *URL = [self testURL: [self.url absoluteString]];
     NSString *randomURL = [NSString stringWithFormat:@"%@%@random=%d",URL.absoluteString,URL.query?@"&":@"?",arc4random()];
-    randomURL = @"http://127.0.0.1:8080/dist/index.js";
+    randomURL = [NSString stringWithFormat: @"http://%@:8080/dist/index.js",CURRENT_IP];
     [_instance renderWithURL:[NSURL URLWithString:randomURL] options:@{@"bundleUrl":URL.absoluteString} data:nil];
 }
 
-- (void)updateInstanceState:(WXState)state
-{
-    if (_instance && _instance.state != state) {
-        _instance.state = state;
-        
-        if (state == WeexInstanceAppear) {
-            [[WXSDKManager bridgeMgr] fireEvent:_instance.instanceId ref:WX_SDK_ROOT_REF type:@"viewappear" params:nil domChanges:nil];
-        }
-        else if (state == WeexInstanceDisappear) {
-            [[WXSDKManager bridgeMgr] fireEvent:_instance.instanceId ref:WX_SDK_ROOT_REF type:@"viewdisappear" params:nil domChanges:nil];
-        }
-    }
-}
+//- (void)updateInstanceState:(WXState)state
+//{
+//    if (_instance && _instance.state != state) {
+//        _instance.state = state;
+//        
+//        if (state == WeexInstanceAppear) {
+//            [[WXSDKManager bridgeMgr] fireEvent:_instance.instanceId ref:WX_SDK_ROOT_REF type:@"viewappear" params:nil domChanges:nil];
+//        }
+//        else if (state == WeexInstanceDisappear) {
+//            [[WXSDKManager bridgeMgr] fireEvent:_instance.instanceId ref:WX_SDK_ROOT_REF type:@"viewdisappear" params:nil domChanges:nil];
+//        }
+//    }
+//}
 
 #pragma mark - refresh
 - (void)refreshWeex

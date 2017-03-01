@@ -2,9 +2,23 @@
   <div class="container">
       <image src="http://ata2-img.cn-hangzhou.img-pub.aliyun-inc.com/7d42775b8f0d0c86589082dc9ee179c2.png" class="bannar-image"/>
       <text class="message">{{ message }}</text>
-      <text class="quotes">{{ quotes }}sfdds</text>    
+      <text class="quotes">{{ quotes }}</text> 
+      <test-comp></test-comp>  
   </div>
 </template>
+
+<script>
+  import test from './test.we'
+  export default{
+    data: {
+      message: 'Welcome to Use Weexpack!',
+      quotes: 'A Tool To Build WEEX Faster',
+    },
+    components:{
+      'test-comp':test,
+    },
+  }
+</script>
 
 <style>
   .container{
@@ -28,12 +42,3 @@
     color:#666; 
   }
 </style>
-
-<script>
-  module.exports = {
-    data: {
-      message: 'Welcome to Use Weexpack!',
-      quotes: 'A Tool To Build WEEX Faster',
-    }
-  }
-</script>

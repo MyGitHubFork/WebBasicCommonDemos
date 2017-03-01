@@ -1,0 +1,12 @@
+<template>
+  <div class="wrapper">
+    <a href="http://www.baidu.com">
+      click
+    </a>
+  </div>
+</template>
+<style>
+.wrapper {
+  text-align: center;
+}
+</style>

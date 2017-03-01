@@ -12,7 +12,8 @@
 #import <WeexSDK/WeexSDK.h>
 #import "WXDemoViewController.h"
 #import "WeexPluginManager.h"
-
+#import "WXImgLoaderDefaultImpl.h"
+#import <WXDevtool/TBWXDevTool/WXDevTool.h>
 @implementation WeexSDKManager
 
 + (void)setup;
@@ -50,6 +51,13 @@
 #ifdef DEBUG
     [WXLog setLogLevel:WXLogLevelLog];
 #endif
+    
+    
+    [WXSDKEngine registerHandler:[WXImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)];
+//    [WXDevTool setDebug:YES];
+//    [WXDevTool launchDevToolDebugWithUrl:[NSString stringWithFormat:@"ws://%@:8088/debugProxy/native",CURRENT_IP]];
+    
+    
 }
 
 + (void)loadCustomContainWithScannerWithUrl:(NSURL *)url

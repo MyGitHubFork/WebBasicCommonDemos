@@ -25,7 +25,7 @@ function walk(dir, root) {
     entry: entry
     , output: {
       path: 'dist'
-      , filename: '[name].js'
+      , filename: 'index.js'
     }
     , devtool: 'inline-source-map'
     , module: {

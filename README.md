@@ -28,6 +28,15 @@
 [Webpack傻瓜指南（二）开发和部署技巧](https://zhuanlan.zhihu.com/p/20397902)</br>
 [webpack优秀中文文章集合](https://github.com/webpack-china/awesome-webpack-cn)</br>
 [前端构建工具gulp入门教程](https://segmentfault.com/a/1190000000372547)</br>
+[webpack入门（一）——webpack 介绍](http://blog.csdn.net/keliyxyz/article/details/51571386)</br>
+[webpack入门（二）——webpack使用](http://blog.csdn.net/keliyxyz/article/details/51577905)</br>
+[webpack入门（三）——webpack 配置](http://blog.csdn.net/keliyxyz/article/details/51527476)</br>
+[webpack入门（四）——webpack loader 和plugin](http://blog.csdn.net/keliyxyz/article/details/51579078)</br>
+[webpack入门（五）——webpack 故障处理](http://blog.csdn.net/keliyxyz/article/details/51579983)</br>
+[webpack入门（六）——html-webpack-plugin](http://blog.csdn.net/keliyxyz/article/details/51513114)</br>
+[webpack loader 列表](http://blog.csdn.net/keliyxyz/article/details/51649429)</br>
+[html-webpack-plugin](http://www.8dou5che.com/2016/12/22/html-webpack-plugin/)</br>
+
 ##iOS原生代码与html5交互
 [WKWebView与Js实战(OC版)](http://www.henishuo.com/wkwebview-js-h5-oc/?utm_source=tuicool&utm_medium=referral)<br/>
 [WKWebView API精讲(OC)](http://www.henishuo.com/wkwebview-objc/?utm_source=tuicool&utm_medium=referral)<br/>
