@@ -19,6 +19,9 @@
 		<div class="link" @click="jump('./five')">
 			<text class='title'>内建模块(five.vue)</text>
 		</div>
+		<div class="link" @click="jump('./six')">
+			<text class='title'>通用事件(six.vue)</text>
+		</div>
 		</scroller>
 		<!-- <text class="fixed-button1" @click="jump(`/`)">back</text> -->
 	</div>
