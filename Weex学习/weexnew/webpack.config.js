@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+require('weex-loader');
 
 var bannerPlugin = new webpack.BannerPlugin(
   '// { "framework": "Vue" }\n',

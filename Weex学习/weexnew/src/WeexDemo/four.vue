@@ -31,7 +31,7 @@
       <text class="value">{{deviceHeight}}</text>
     </div>
     <div class="controls">
-      <text class="button" onclick="copy">copy</text>
+      <text class="button" @click="copy">copy</text>
     </div>
   </scroller>
 </template>

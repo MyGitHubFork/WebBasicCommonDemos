@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <scroller>
     <div class="wrapper one">
       <a class="button" href="http://localhost:1337/dist/index.weex.js">
         <text class="text">a组件跳转到一个weex项目。如果演示，请选择一个自己本机正在运行的weex项目的地址</text>
@@ -17,10 +17,20 @@
       <switch @change='onchange'></switch>
       <text class='info'>{{checked}}</text>
     </div>
-  </div>
+    <div>
+      <video class='video' :src='src' autoplay controls @start='onstart' @pause='onpause' @finish='onfinish' @fail='onfail'>
+      </video>
+      <text class='info1'>state:{{state}}</text>
+    </div>
+    <div class="wrapper">
+      <div ref='test' @click='move' class='box'>
+      </div>
+    </div>
+  </scroller>
 </template>
 <script>
   const modal = weex.requireModule('modal');
+  const animation = weex.requireModule('animation');
   export default{
     data(){
       return {
@@ -30,6 +40,8 @@
         { src: 'https://gd3.alicdn.com/bao/uploaded/i3/TB1x6hYLXXXXXazXVXXXXXXXXXX_!!0-item_pic.jpg'}
         ],
          checked:false,
+         state:'---',
+         src:'http://flv2.bn.netease.com/videolib3/1611/01/XGqSL5981/SD/XGqSL5981-mobile.mp4'
       }
     },
     methods:{
@@ -40,12 +52,54 @@
           duration:2
         });
         this.checked = event.value;
+      },
+      onstart:function(event) {
+        this.tate = 'onstart';
+      },
+      onpause:function(event) {
+        this.state = 'onpause';
+      },
+      onfinish:function(event) {
+        this.state = 'onfinish';
+      },
+      onfail:function(event) {
+        this.state = 'onfail';
+      },
+      move:function() {
+        var testEl = this.$refs.test;
+        animation.transition(testEl,{
+          styles:{
+            color:'#ff0000',
+            transform:'translate(250px,100px)',
+            transformOrigin:'center center'
+          },
+          duration:800,
+          timingFunction:'ease',
+          delay:0
+        },function() {
+          modal.toast({message:'animation finished.'});
+        });
       }
-
     }
   }
 </script>
 <style scoped>
+.video{
+  width:630px;
+  height: 350px;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+.box{
+  width: 250px;
+  height: 250px;
+  background-color: #DDD
+}
+.info1{
+  margin-top: 40px;
+  font-size: 40px;
+  text-align: center;
+}
 .example{
   flex-direction: row;
   justify-content: flex-start;

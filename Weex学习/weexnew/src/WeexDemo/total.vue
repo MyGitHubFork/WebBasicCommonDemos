@@ -14,7 +14,10 @@
 			<text class='title'>组件(three.vue)</text>
 		</div>
 		<div class="link" @click="jump('./four')">
-			<text class='title'>系统信息(three.vue)</text>
+			<text class='title'>系统信息(four.vue)</text>
+		</div>
+		<div class="link" @click="jump('./five')">
+			<text class='title'>内建模块(five.vue)</text>
 		</div>
 		</scroller>
 		<!-- <text class="fixed-button1" @click="jump(`/`)">back</text> -->

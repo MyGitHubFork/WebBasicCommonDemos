@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<text ontouch="ontouch">Touch手势</text>
+		<text @touch="ontouch">Touch手势</text>
 	</div>
 </template>
 <style scoped>
@@ -15,7 +15,7 @@
 			}
 		},
 		methods:{
-			ontouch() {
+			ontouch:function(argument) {
 				modal.toast({
 					message:"test",
 					duration:0.8
