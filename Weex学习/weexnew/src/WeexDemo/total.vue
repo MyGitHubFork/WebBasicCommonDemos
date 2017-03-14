@@ -13,6 +13,9 @@
 		<div class="link" @click="jump('./three')">
 			<text class='title'>组件(three.vue)</text>
 		</div>
+		<div class="link" @click="jump('./four')">
+			<text class='title'>系统信息(three.vue)</text>
+		</div>
 		</scroller>
 		<!-- <text class="fixed-button1" @click="jump(`/`)">back</text> -->
 	</div>
@@ -40,7 +43,7 @@
 				Stack.onmessage = function(event) {
 					//console.log(event.data);
 					modal.toast({
-					  message:event.data,
+					  message:"yeye",
 					  duration:1.8
 					});
 				}

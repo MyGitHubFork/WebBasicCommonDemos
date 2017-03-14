@@ -8,7 +8,7 @@ import DemoView from './WeexDemo/total.vue'
 import first from './WeexDemo/first.vue'
 import second from './WeexDemo/second.vue'
 import three from './WeexDemo/three.vue'
-
+import four from './WeexDemo/four.vue'
 
 
 Vue.use(Router)
@@ -35,6 +35,7 @@ export default new Router({
     { path: '/first', component:first},
     { path: '/second', component:second},
      { path: '/three', component:three},
+     { path: '/four', component:four},
     { path: '/article/:url(.*)?', component: ArticleView },
     { path: '/item/:id(\\d+)', component: CommentView },
     { path: '/user/:id', component: UserView },

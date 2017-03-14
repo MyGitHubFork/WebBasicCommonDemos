@@ -5,10 +5,10 @@
     </div>
     <div class="nav">
       <div class="link" @click="jumpout()">
-        <text class="title">测试</text>
+        <text class="title">调用原生</text>
       </div>
       <div class="link" @click="jump('/demo')">
-        <text class="title">WeexDemo</text>
+        <text class="title">Weex练习</text>
       </div>
       <div class="link" @click="jump('/top')">
         <text class="title">{{test}}</text>
@@ -76,15 +76,15 @@
         var self = this;
         // this.$nextTick(() => {
           globalEvent.removeEventListener("test");
-          modal.toast({
-                message:'yeye',
-                duration:0.8
-              });
+          // modal.toast({
+          //       message:'yeye',
+          //       duration:0.8
+          //     });
           globalEvent.addEventListener("test",function(e){
-              modal.toast({
-                message:'hehehhhe',
-                duration:0.8
-              });
+              // modal.toast({
+              //   message:'hehehhhe',
+              //   duration:0.8
+              // });
               self.$router.back()
           });
         // })

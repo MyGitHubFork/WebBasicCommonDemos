@@ -23,7 +23,10 @@ function getBaseConfig () {
         }, {
           test: /\.vue(\?[^?]+)?$/,
           loaders: []
-        }]
+        },{
+          test: /\.we(\?[^?]+)?$/
+          , loaders: ['weex-loader']
+      }]
     },
     plugins: [bannerPlugin]
   }
