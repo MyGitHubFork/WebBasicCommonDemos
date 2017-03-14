@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<text @touch="ontouch">Touch手势</text>
+		<text ontouch="ontouch">Touch手势</text>
 	</div>
 </template>
 <style scoped>
