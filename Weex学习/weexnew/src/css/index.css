@@ -1,0 +1,17 @@
+/*
+* @Author: huangchengdu
+* @Date:   2017-03-07 11:03:49
+* @Last Modified by:   huangchengdu
+* @Last Modified time: 2017-03-07 11:30:51
+*/
+.fixed-button1 {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  background-color: #FC6621;
+  border-radius: 10px;
+  width: 120px;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
