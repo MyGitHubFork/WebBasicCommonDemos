@@ -3,6 +3,7 @@
 [Ajax-hook 原理解析(拦截和处理ajax请求和返回)](http://www.jianshu.com/p/7337ac624b8e)</br>
 [ajax上传技术 大文件/超大文件前端切割上传，后端进行重组](http://www.cnblogs.com/GerryOfZhong/p/6295211.html)</br>
 [https://github.com/huang303513/WebKeyPointExploration](https://github.com/huang303513/WebKeyPointExploration)</br>
+[分析输入url到页面返回的过程](http://www.cnblogs.com/wenanry/archive/2010/02/25/1673368.html)</br>
 ##各种基础原理和框架使用等
 [JavaScript中创建对象的7种模式](https://zhuanlan.zhihu.com/p/23226652)</br>
 [关于base64编码的原理及实现](http://www.cnblogs.com/hongru/archive/2012/01/14/2321397.html)</br>
