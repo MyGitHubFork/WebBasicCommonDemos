@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
+
+abstract_target 'All' do
+    pod 'WeexSDK', '0.10.1'
+    pod  'WXDevtool','0.9.5'
+    pod 'SDWebImage', '3.7.5'
+	target 'WEEX入门' do
+	end
+end
