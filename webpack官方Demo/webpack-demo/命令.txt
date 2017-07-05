@@ -14,3 +14,7 @@ npm run build
 //==================添加less支持
 npm install --save-dev less-loader less
 npm run build
+
+//=================加载图片资源
+npm install --save-dev file-loader
+npm run build

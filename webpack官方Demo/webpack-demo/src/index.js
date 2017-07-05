@@ -14,9 +14,9 @@
 
 
      // 将图像添加到我们现有的 div。
-     var myIcon = new Image();
-     myIcon.src = Icon;
-     element.appendChild(myIcon);
+     // var myIcon = new Image();
+     // myIcon.src = Icon;
+     // element.appendChild(myIcon);
 
      return element;
  }

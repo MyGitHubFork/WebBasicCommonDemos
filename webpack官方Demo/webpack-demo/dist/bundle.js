@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 13);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -201,7 +201,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(8);
+var	fixUrls = __webpack_require__(10);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -17603,7 +17603,7 @@ function updateLink (link, options, obj) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9), __webpack_require__(10)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(11), __webpack_require__(12)(module)))
 
 /***/ }),
 /* 4 */
@@ -17676,7 +17676,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, ".lessFont {\n  font-size: 50px;\n}\n", ""]);
+exports.push([module.i, ".lessFont {\n  /*font-size: 50px;*/\n}\n", ""]);
 
 // exports
 
@@ -17690,13 +17690,25 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, ".hello {\n  color: red;\n  background: url(" + __webpack_require__(0) + ");\n}\n\n", ""]);
+exports.push([module.i, "@font-face {\n    font-family: 'MyFont';\n    src: url(" + __webpack_require__(9) + ") format('woff2'), url(" + __webpack_require__(8) + ") format('woff');\n    font-weight: 600;\n    font-style: normal;\n}\n\n.hello {\n    color: red;\n    font-family: 'MyFont';\n    background: url(" + __webpack_require__(0) + ");\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "d41d8cd98f00b204e9800998ecf8427e.woff";
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "d41d8cd98f00b204e9800998ecf8427e.woff2";
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports) {
 
 
@@ -17791,7 +17803,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports) {
 
 var g;
@@ -17818,7 +17830,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -17846,7 +17858,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17875,9 +17887,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
      // 将图像添加到我们现有的 div。
-     var myIcon = new Image();
-     myIcon.src = __WEBPACK_IMPORTED_MODULE_3__icon_png___default.a;
-     element.appendChild(myIcon);
+     // var myIcon = new Image();
+     // myIcon.src = Icon;
+     // element.appendChild(myIcon);
 
      return element;
  }
