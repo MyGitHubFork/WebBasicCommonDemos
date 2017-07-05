@@ -1,0 +1,4 @@
+npm init -y
+npm install --save-dev webpack@2.2
+npm install --save lodash
+./node_modules/.bin/webpack src/index.js dist/bundle.js
