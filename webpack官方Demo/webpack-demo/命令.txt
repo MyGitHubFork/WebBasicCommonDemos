@@ -10,3 +10,7 @@ npm install --save lodash
 npm run build
 npm install --save-dev style-loader css-loader
 npm run build
+
+//==================添加less支持
+npm install --save-dev less-loader less
+npm run build
