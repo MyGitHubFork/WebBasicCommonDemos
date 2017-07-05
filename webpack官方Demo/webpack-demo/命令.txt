@@ -2,3 +2,11 @@ npm init -y
 npm install --save-dev webpack@2.2
 npm install --save lodash
 ./node_modules/.bin/webpack src/index.js dist/bundle.js
+
+
+./node_modules/.bin/webpack --config webpack.config.js
+
+//==================添加script命令和样式表
+npm run build
+npm install --save-dev style-loader css-loader
+npm run build
