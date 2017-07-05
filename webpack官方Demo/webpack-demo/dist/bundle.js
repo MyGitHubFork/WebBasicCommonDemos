@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 13);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -201,7 +201,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(10);
+var	fixUrls = __webpack_require__(11);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -17603,7 +17603,7 @@ function updateLink (link, options, obj) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(11), __webpack_require__(12)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12), __webpack_require__(13)(module)))
 
 /***/ }),
 /* 4 */
@@ -17612,7 +17612,7 @@ function updateLink (link, options, obj) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(6);
+var content = __webpack_require__(7);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -17643,7 +17643,7 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(7);
+var content = __webpack_require__(8);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -17669,6 +17669,12 @@ if(false) {
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports) {
+
+module.exports = {"note":{"to":["Mary"],"from":["John"],"heading":["Reminder"],"body":["Call Cindy on Tuesday"]}}
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -17682,7 +17688,7 @@ exports.push([module.i, ".lessFont {\n  /*font-size: 50px;*/\n}\n", ""]);
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -17690,25 +17696,25 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n    font-family: 'MyFont';\n    src: url(" + __webpack_require__(9) + ") format('woff2'), url(" + __webpack_require__(8) + ") format('woff');\n    font-weight: 600;\n    font-style: normal;\n}\n\n.hello {\n    color: red;\n    font-family: 'MyFont';\n    background: url(" + __webpack_require__(0) + ");\n}\n", ""]);
+exports.push([module.i, "@font-face {\n    font-family: 'MyFont';\n    src: url(" + __webpack_require__(10) + ") format('woff2'), url(" + __webpack_require__(9) + ") format('woff');\n    font-weight: 600;\n    font-style: normal;\n}\n\n.hello {\n    color: red;\n    font-family: 'MyFont';\n    background: url(" + __webpack_require__(0) + ");\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "d41d8cd98f00b204e9800998ecf8427e.woff";
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "d41d8cd98f00b204e9800998ecf8427e.woff2";
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports) {
 
 
@@ -17803,7 +17809,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 var g;
@@ -17830,7 +17836,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -17858,7 +17864,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17871,6 +17877,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__icon_png__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__icon_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__icon_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_xml__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_xml___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__data_xml__);
+ 
  
  
  
@@ -17885,6 +17894,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
      element.classList.add('hello');
      element.classList.add('lessFont');
 
+
+     console.log(__WEBPACK_IMPORTED_MODULE_4__data_xml___default.a);
+     alert(__WEBPACK_IMPORTED_MODULE_4__data_xml___default.a);
 
      // 将图像添加到我们现有的 div。
      // var myIcon = new Image();
