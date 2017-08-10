@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --progress --watch",
     "start": "serve",
+    "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,6 +21,7 @@
     "serve": "6.0.1",
     "style-loader": "0.18.2",
     "webpack": "2.2.1",
+    "webpack-dev-server": "2.5.0",
     "xml-loader": "1.2.1"
   },
   "dependencies": {
