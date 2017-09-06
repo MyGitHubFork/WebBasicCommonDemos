@@ -169,7 +169,7 @@
 				TargetAttributes = {
 					4D0DC8841EC021B90001A883 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = F5L2MR9755;
+						DevelopmentTeam = UNS8RSTG96;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -385,7 +385,7 @@
 			baseConfigurationReference = A2BCEECB570563340424F29B /* Pods-All-WEEX入门.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F5L2MR9755;
+				DEVELOPMENT_TEAM = UNS8RSTG96;
 				INFOPLIST_FILE = "WEEX入门/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "www.ctrip.cpm.WEEX--";
@@ -398,7 +398,7 @@
 			baseConfigurationReference = 1E9060A1CB3A04815F9C281F /* Pods-All-WEEX入门.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F5L2MR9755;
+				DEVELOPMENT_TEAM = UNS8RSTG96;
 				INFOPLIST_FILE = "WEEX入门/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "www.ctrip.cpm.WEEX--";

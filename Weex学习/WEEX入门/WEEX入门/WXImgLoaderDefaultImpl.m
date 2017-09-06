@@ -7,7 +7,7 @@
 //
 
 #import "WXImgLoaderDefaultImpl.h"
-#import <YYWebImage.h>
+
 
 #define MIN_IMAGE_WIDTH 36
 #define MIN_IMAGE_HEIGHT 36
@@ -41,11 +41,12 @@
     if ([url hasPrefix:@"//"]) {
         url = [@"http:" stringByAppendingString:url];
     }    
-    return (id<WXImageOperationProtocol>)[[YYWebImageManager sharedManager] requestImageWithURL:[NSURL URLWithString:url] options:YYWebImageOptionShowNetworkActivity progress:nil transform:nil completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
-        if (completedBlock) {
-           completedBlock(image,error,stage);
-        }
-    }];
+    return nil;
+//    (id<WXImageOperationProtocol>)[[YYWebImageManager sharedManager] requestImageWithURL:[NSURL URLWithString:url] options:YYWebImageOptionShowNetworkActivity progress:nil transform:nil completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
+//        if (completedBlock) {
+//           completedBlock(image,error,stage);
+//        }
+//    }];
     
 }
 

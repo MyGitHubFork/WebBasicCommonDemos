@@ -143,7 +143,8 @@
     }
     NSURL *URL = [self testURL: [self.url absoluteString]];
     NSString *randomURL = [NSString stringWithFormat:@"%@%@random=%d",URL.absoluteString,URL.query?@"&":@"?",arc4random()];
-    randomURL = [NSString stringWithFormat: @"http://%@:8080/dist/index.js",CURRENT_IP];
+    randomURL = [NSString stringWithFormat: @"http://%@:1337/dist/index.weex.js",@"10.38.118.18"];
+    
     [_instance renderWithURL:[NSURL URLWithString:randomURL] options:@{@"bundleUrl":URL.absoluteString} data:nil];
 }
 
